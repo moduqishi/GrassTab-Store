@@ -1,0 +1,24 @@
+{
+    "hero": [
+        {
+            "id": "welcome_banner",
+            "title": "Welcome to GrassTab Store",
+            "subtitle": "Discover amazing apps & widgets.",
+            "description": "全新的体验，从这里开始。",
+            "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+            "action": {
+                "type": "link",
+                "label": "Explore",
+                "url": "#apps"
+            },
+            "style": "dark"
+        }
+    ],
+    "featuredApps": [
+        "com.game.2048",
+        "com.dev.vscode"
+    ],
+    "featuredWidgets": [
+        "com.widget.weather.simple"
+    ]
+}
