@@ -8,7 +8,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "QQ邮箱",
             "url": "https://mail.qq.com",
@@ -28,7 +28,7 @@
         "version": "1.0.0",
         "author": "AntGroup",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "支付宝",
             "url": "https://www.alipay.com",
@@ -48,7 +48,7 @@
         "version": "1.0.0",
         "author": "ByteDance",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "抖音",
             "url": "https://www.douyin.com",
@@ -68,7 +68,7 @@
         "version": "1.0.0",
         "author": "ByteDance",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "飞书",
             "url": "https://www.feishu.cn",
@@ -88,7 +88,7 @@
         "version": "1.0.0",
         "author": "V2EX",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "V2EX",
             "url": "https://www.v2ex.com",
@@ -108,7 +108,7 @@
         "version": "1.0.0",
         "author": "OSChina",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Gitee",
             "url": "https://gitee.com",
@@ -128,7 +128,7 @@
         "version": "1.0.0",
         "author": "NetEase",
         "category": "Music",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "网易云音乐",
             "url": "https://music.163.com",
@@ -148,7 +148,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度网盘",
             "url": "https://pan.baidu.com",
@@ -168,7 +168,7 @@
         "version": "1.0.0",
         "author": "Qunar",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "去哪儿网",
             "url": "https://www.qunar.com",
@@ -188,7 +188,7 @@
         "version": "1.0.0",
         "author": "ProcessOn",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "ProcessOn",
             "url": "https://www.processon.com",
@@ -208,7 +208,7 @@
         "version": "1.0.0",
         "author": "36Kr",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "36氪",
             "url": "https://36kr.com",
@@ -228,7 +228,7 @@
         "version": "1.0.0",
         "author": "Huxiu",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "虎嗅",
             "url": "https://www.huxiu.com",
@@ -248,7 +248,7 @@
         "version": "1.0.0",
         "author": "sspai",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "少数派",
             "url": "https://sspai.com",
@@ -268,7 +268,7 @@
         "version": "1.0.0",
         "author": "Microsoft",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "GitHub",
             "url": "https://github.com",
@@ -288,7 +288,7 @@
         "version": "1.0.0",
         "author": "StackExchange",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Stack Overflow",
             "url": "https://stackoverflow.com",
@@ -308,7 +308,7 @@
         "version": "1.0.0",
         "author": "Huaban",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "花瓣网",
             "url": "https://huaban.com",
@@ -328,7 +328,7 @@
         "version": "1.0.0",
         "author": "ZCOOL",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "站酷",
             "url": "https://www.zcool.com.cn",
@@ -348,7 +348,7 @@
         "version": "1.0.0",
         "author": "Lanhu",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "蓝湖",
             "url": "https://lanhuapp.com",
@@ -368,7 +368,7 @@
         "version": "1.0.0",
         "author": "Notion Labs",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Notion",
             "url": "https://www.notion.so",
@@ -388,7 +388,7 @@
         "version": "1.0.0",
         "author": "Canva",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Canva",
             "url": "https://www.canva.cn",
@@ -408,7 +408,7 @@
         "version": "1.0.0",
         "author": "iQIYI",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "爱奇艺",
             "url": "https://www.iqiyi.com",
@@ -428,7 +428,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "腾讯视频",
             "url": "https://v.qq.com",
@@ -448,7 +448,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "优酷",
             "url": "https://www.youku.com",
@@ -468,7 +468,7 @@
         "version": "1.0.0",
         "author": "Meituan",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "美团",
             "url": "https://www.meituan.com",
@@ -488,7 +488,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "饿了么",
             "url": "https://www.ele.me",
@@ -508,7 +508,7 @@
         "version": "1.0.0",
         "author": "Ctrip",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "携程",
             "url": "https://www.ctrip.com",
@@ -528,7 +528,7 @@
         "version": "1.0.0",
         "author": "Autohome",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "汽车之家",
             "url": "https://www.autohome.com.cn",
@@ -548,7 +548,7 @@
         "version": "1.0.0",
         "author": "Leiphone",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "雷峰网",
             "url": "https://www.leiphone.com",
@@ -568,7 +568,7 @@
         "version": "1.0.0",
         "author": "Jianshu",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "简书",
             "url": "https://www.jianshu.com",
@@ -588,7 +588,7 @@
         "version": "1.0.0",
         "author": "cnBeta",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "cnBeta",
             "url": "https://www.cnbeta.com.tw",
@@ -608,7 +608,7 @@
         "version": "1.0.0",
         "author": "OSChina",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "开源中国",
             "url": "https://www.oschina.net",
@@ -628,7 +628,7 @@
         "version": "1.0.0",
         "author": "SegmentFault",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "SegmentFault",
             "url": "https://segmentfault.com",
@@ -648,7 +648,7 @@
         "version": "1.0.0",
         "author": "Runoob",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "菜鸟教程",
             "url": "https://www.runoob.com",
@@ -668,7 +668,7 @@
         "version": "1.0.0",
         "author": "W3school",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "W3school",
             "url": "https://www.w3school.com.cn",
@@ -688,7 +688,7 @@
         "version": "1.0.0",
         "author": "PConline",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "太平洋电脑",
             "url": "https://www.pconline.com.cn",
@@ -708,7 +708,7 @@
         "version": "1.0.0",
         "author": "ZOL",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "ZOL",
             "url": "https://www.zol.com.cn",
@@ -728,7 +728,7 @@
         "version": "1.0.0",
         "author": "SMZDM",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "什么值得买",
             "url": "https://www.smzdm.com",
@@ -748,7 +748,7 @@
         "version": "1.0.0",
         "author": "Kuaishou",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "快手",
             "url": "https://www.kuaishou.com",
@@ -768,7 +768,7 @@
         "version": "1.0.0",
         "author": "ChinaMobile",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "咪咕视频",
             "url": "https://www.miguvideo.com",
@@ -788,7 +788,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度贴吧",
             "url": "https://tieba.baidu.com",
@@ -808,7 +808,7 @@
         "version": "1.0.0",
         "author": "NetEase",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "网易",
             "url": "https://www.163.com",
@@ -828,7 +828,7 @@
         "version": "1.0.0",
         "author": "Sohu",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "搜狐",
             "url": "https://www.sohu.com",
@@ -848,7 +848,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "腾讯网",
             "url": "https://www.qq.com",
@@ -868,7 +868,7 @@
         "version": "1.0.0",
         "author": "iFeng",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "凤凰网",
             "url": "https://www.ifeng.com",
@@ -888,7 +888,7 @@
         "version": "1.0.0",
         "author": "EastMoney",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "东方财富",
             "url": "https://www.eastmoney.com",
@@ -908,7 +908,7 @@
         "version": "1.0.0",
         "author": "THS",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "同花顺",
             "url": "https://www.10jqka.com.cn",
@@ -928,7 +928,7 @@
         "version": "1.0.0",
         "author": "CNKI",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "知网",
             "url": "https://www.cnki.net",
@@ -948,7 +948,7 @@
         "version": "1.0.0",
         "author": "WanFang",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "万方数据",
             "url": "https://www.wanfangdata.com.cn",
@@ -968,7 +968,7 @@
         "version": "1.0.0",
         "author": "Government",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "教育部",
             "url": "http://www.moe.gov.cn",
@@ -988,7 +988,7 @@
         "version": "1.0.0",
         "author": "CHSI",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "学信网",
             "url": "https://www.chsi.com.cn",
@@ -1008,7 +1008,7 @@
         "version": "1.0.0",
         "author": "NetEase",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "大学MOOC",
             "url": "https://www.icourse163.org",
@@ -1028,7 +1028,7 @@
         "version": "1.0.0",
         "author": "Guokr",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "果壳",
             "url": "https://www.guokr.com",
@@ -1048,7 +1048,7 @@
         "version": "1.0.0",
         "author": "DXY",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "丁香园",
             "url": "https://www.dxy.cn",
@@ -1068,7 +1068,7 @@
         "version": "1.0.0",
         "author": "Ximalaya",
         "category": "Music",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "喜马拉雅",
             "url": "https://www.ximalaya.com",
@@ -1088,7 +1088,7 @@
         "version": "1.0.0",
         "author": "Pixiv",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Pixiv",
             "url": "https://www.pixiv.net",
@@ -1108,7 +1108,7 @@
         "version": "1.0.0",
         "author": "Adobe",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Behance",
             "url": "https://www.behance.net",
@@ -1128,7 +1128,7 @@
         "version": "1.0.0",
         "author": "Dribbble",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Dribbble",
             "url": "https://dribbble.com",
@@ -1148,7 +1148,7 @@
         "version": "1.0.0",
         "author": "Jiemian",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "界面新闻",
             "url": "https://www.jiemian.com",
@@ -1168,7 +1168,7 @@
         "version": "1.0.0",
         "author": "Caixin",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "财新网",
             "url": "https://www.caixin.com",
@@ -1188,7 +1188,7 @@
         "version": "1.0.0",
         "author": "WallStreetCN",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "华尔街见闻",
             "url": "https://wallstreetcn.com",
@@ -1208,7 +1208,7 @@
         "version": "1.0.0",
         "author": "HeXun",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "和讯网",
             "url": "https://www.hexun.com",
@@ -1228,7 +1228,7 @@
         "version": "1.0.0",
         "author": "Tianyancha",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "天眼查",
             "url": "https://www.tianyancha.com",
@@ -1248,7 +1248,7 @@
         "version": "1.0.0",
         "author": "Qcc",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "企查查",
             "url": "https://www.qcc.com",
@@ -1268,7 +1268,7 @@
         "version": "1.0.0",
         "author": "QiMai",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "七麦数据",
             "url": "https://www.qimai.cn",
@@ -1288,7 +1288,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "阿里云",
             "url": "https://www.aliyun.com",
@@ -1308,7 +1308,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "腾讯云",
             "url": "https://cloud.tencent.com",
@@ -1328,7 +1328,7 @@
         "version": "1.0.0",
         "author": "Huawei",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "华为云",
             "url": "https://www.huaweicloud.com",
@@ -1348,7 +1348,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度云",
             "url": "https://cloud.baidu.com",
@@ -1368,7 +1368,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "片源网",
             "url": "https://pianyuan.la",
@@ -1388,7 +1388,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "BT之家",
             "url": "http://www.btbtt15.com",
@@ -1408,7 +1408,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "电影天堂",
             "url": "https://www.dygod.net",
@@ -1428,7 +1428,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "阳光电影",
             "url": "https://www.ygdy8.com",
@@ -1448,7 +1448,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "盘搜",
             "url": "https://www.pansearch.me",
@@ -1468,7 +1468,7 @@
         "version": "1.0.0",
         "author": "Web",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "大力盘",
             "url": "https://www.dalipan.com",
@@ -1488,7 +1488,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "阿里云盘",
             "url": "https://www.aliyundrive.com",
@@ -1508,7 +1508,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "夸克网盘",
             "url": "https://pan.quark.cn",
@@ -1528,7 +1528,7 @@
         "version": "1.0.0",
         "author": "LanZou",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "蓝奏云",
             "url": "https://www.lanzou.com",
@@ -1548,7 +1548,7 @@
         "version": "1.0.0",
         "author": "123Pan",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "123云盘",
             "url": "https://www.123pan.com",
@@ -1568,7 +1568,7 @@
         "version": "1.0.0",
         "author": "JianGuo",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "坚果云",
             "url": "https://www.jianguoyun.com",
@@ -1588,7 +1588,7 @@
         "version": "1.0.0",
         "author": "Shimo",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "石墨文档",
             "url": "https://shimo.im",
@@ -1608,7 +1608,7 @@
         "version": "1.0.0",
         "author": "Kingsoft",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "WPS",
             "url": "https://www.wps.cn",
@@ -1628,7 +1628,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "腾讯文档",
             "url": "https://docs.qq.com",
@@ -1648,7 +1648,7 @@
         "version": "1.0.0",
         "author": "AntGroup",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "语雀",
             "url": "https://www.yuque.com",
@@ -1668,7 +1668,7 @@
         "version": "1.0.0",
         "author": "ByteDance",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "今日头条",
             "url": "https://www.toutiao.com",
@@ -1688,7 +1688,7 @@
         "version": "1.0.0",
         "author": "Zero2IPO",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "投资界",
             "url": "https://www.pedaily.cn",
@@ -1708,7 +1708,7 @@
         "version": "1.0.0",
         "author": "ITJuzi",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "IT橘子",
             "url": "https://www.itjuzi.com",
@@ -1728,7 +1728,7 @@
         "version": "1.0.0",
         "author": "DouYu",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "斗鱼",
             "url": "https://www.douyu.com",
@@ -1748,7 +1748,7 @@
         "version": "1.0.0",
         "author": "Huya",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "虎牙直播",
             "url": "https://www.huya.com",
@@ -1768,7 +1768,7 @@
         "version": "1.0.0",
         "author": "JOYY",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "YY直播",
             "url": "https://www.yy.com",
@@ -1788,7 +1788,7 @@
         "version": "1.0.0",
         "author": "MaFengWo",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "马蜂窝",
             "url": "https://www.mafengwo.cn",
@@ -1808,7 +1808,7 @@
         "version": "1.0.0",
         "author": "TuNiu",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "途牛旅游",
             "url": "https://www.tuniu.com",
@@ -1828,7 +1828,7 @@
         "version": "1.0.0",
         "author": "eLong",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "艺龙",
             "url": "https://www.elong.com",
@@ -1848,7 +1848,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "飞猪",
             "url": "https://www.fliggy.com",
@@ -1868,7 +1868,7 @@
         "version": "1.0.0",
         "author": "Lianjia",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "链家",
             "url": "https://www.lianjia.com",
@@ -1888,7 +1888,7 @@
         "version": "1.0.0",
         "author": "Beike",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "贝壳找房",
             "url": "https://www.ke.com",
@@ -1908,7 +1908,7 @@
         "version": "1.0.0",
         "author": "58.com",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "58同城",
             "url": "https://www.58.com",
@@ -1928,7 +1928,7 @@
         "version": "1.0.0",
         "author": "58.com",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "赶集网",
             "url": "https://www.ganji.com",
@@ -1948,7 +1948,7 @@
         "version": "1.0.0",
         "author": "BossZhipin",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "BOSS直聘",
             "url": "https://www.zhipin.com",
@@ -1968,7 +1968,7 @@
         "version": "1.0.0",
         "author": "LaGou",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "拉勾网",
             "url": "https://www.lagou.com",
@@ -1988,7 +1988,7 @@
         "version": "1.0.0",
         "author": "Zhaopin",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "智联招聘",
             "url": "https://www.zhaopin.com",
@@ -2008,7 +2008,7 @@
         "version": "1.0.0",
         "author": "51job",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "前程无忧",
             "url": "https://www.51job.com",
@@ -2028,7 +2028,7 @@
         "version": "1.0.0",
         "author": "JiaYuan",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "世纪佳缘",
             "url": "https://www.jiayuan.com",
@@ -2048,7 +2048,7 @@
         "version": "1.0.0",
         "author": "Zhenai",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "珍爱网",
             "url": "https://www.zhenai.com",
@@ -2068,7 +2068,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "土豆",
             "url": "https://www.tudou.com",
@@ -2088,7 +2088,7 @@
         "version": "1.0.0",
         "author": "Kuaishou",
         "category": "Video",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "AcFun",
             "url": "https://www.acfun.cn",
@@ -2108,7 +2108,7 @@
         "version": "1.0.0",
         "author": "Xunlei",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "迅雷",
             "url": "https://www.xunlei.com",
@@ -2128,7 +2128,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "天空下载",
             "url": "http://www.skycn.com",
@@ -2148,7 +2148,7 @@
         "version": "1.0.0",
         "author": "HuaJun",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "华军软件园",
             "url": "https://www.onlinedown.net",
@@ -2168,7 +2168,7 @@
         "version": "1.0.0",
         "author": "PC6",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PC6下载",
             "url": "http://www.pc6.com",
@@ -2188,7 +2188,7 @@
         "version": "1.0.0",
         "author": "XiaZaiBa",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "下载吧",
             "url": "https://www.xiazaiba.com",
@@ -2208,7 +2208,7 @@
         "version": "1.0.0",
         "author": "RuanMei",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "IT之家",
             "url": "https://www.ithome.com",
@@ -2228,7 +2228,7 @@
         "version": "1.0.0",
         "author": "MyDrivers",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "快科技",
             "url": "https://www.mydrivers.com",
@@ -2248,7 +2248,7 @@
         "version": "1.0.0",
         "author": "Solidot",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Solidot",
             "url": "https://www.solidot.org",
@@ -2268,7 +2268,7 @@
         "version": "1.0.0",
         "author": "Chiphell",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Chiphell",
             "url": "https://www.chiphell.com",
@@ -2288,7 +2288,7 @@
         "version": "1.0.0",
         "author": "NGA",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "NGA",
             "url": "https://nga.cn",
@@ -2308,7 +2308,7 @@
         "version": "1.0.0",
         "author": "Gamersky",
         "category": "Game",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "游民星空",
             "url": "https://www.gamersky.com",
@@ -2328,7 +2328,7 @@
         "version": "1.0.0",
         "author": "3DM",
         "category": "Game",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "3DM游戏",
             "url": "https://www.3dmgame.com",
@@ -2348,7 +2348,7 @@
         "version": "1.0.0",
         "author": "Ali213",
         "category": "Game",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "游侠网",
             "url": "https://www.ali213.net",
@@ -2368,7 +2368,7 @@
         "version": "1.0.0",
         "author": "XD",
         "category": "Game",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TapTap",
             "url": "https://www.taptap.com",
@@ -2388,7 +2388,7 @@
         "version": "1.0.0",
         "author": "Valve",
         "category": "Game",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Steam",
             "url": "https://store.steampowered.com",
@@ -2408,7 +2408,7 @@
         "version": "1.0.0",
         "author": "OpenAI",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "ChatGPT",
             "url": "https://chatgpt.com",
@@ -2428,7 +2428,7 @@
         "version": "1.0.0",
         "author": "Moonshot",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Kimi",
             "url": "https://kimi.moonshot.cn",
@@ -2448,7 +2448,7 @@
         "version": "1.0.0",
         "author": "DeepSeek",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "DeepSeek",
             "url": "https://www.deepseek.com",
@@ -2468,7 +2468,7 @@
         "version": "1.0.0",
         "author": "Zhipu AI",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "智谱清言",
             "url": "https://chatglm.cn",
@@ -2488,7 +2488,7 @@
         "version": "1.0.0",
         "author": "Anthropic",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Claude",
             "url": "https://claude.ai",
@@ -2508,7 +2508,7 @@
         "version": "1.0.0",
         "author": "Freepik",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Freepik",
             "url": "https://www.freepik.com",
@@ -2528,7 +2528,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Iconfont",
             "url": "https://www.iconfont.cn",
@@ -2548,7 +2548,7 @@
         "version": "1.0.0",
         "author": "UISDC",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "优设网",
             "url": "https://www.uisdc.com",
@@ -2568,7 +2568,7 @@
         "version": "1.0.0",
         "author": "Framer",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Framer",
             "url": "https://www.framer.com",
@@ -2588,7 +2588,7 @@
         "version": "1.0.0",
         "author": "Adobe",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Figma",
             "url": "https://www.figma.com",
@@ -2608,7 +2608,7 @@
         "version": "1.0.0",
         "author": "Pixso",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Pixso",
             "url": "https://pixso.cn",
@@ -2628,7 +2628,7 @@
         "version": "1.0.0",
         "author": "Lanhu",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "MasterGo",
             "url": "https://mastergo.com",
@@ -2648,7 +2648,7 @@
         "version": "1.0.0",
         "author": "Spline",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Spline",
             "url": "https://spline.design",
@@ -2668,7 +2668,7 @@
         "version": "1.0.0",
         "author": "Fonticons",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Font Awesome",
             "url": "https://fontawesome.com",
@@ -2688,7 +2688,7 @@
         "version": "1.0.0",
         "author": "Gal Shir",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Color Hunt",
             "url": "https://colorhunt.co",
@@ -2708,7 +2708,7 @@
         "version": "1.0.0",
         "author": "StackExchange",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "StackOverflow",
             "url": "https://stackoverflow.com",
@@ -2728,7 +2728,7 @@
         "version": "1.0.0",
         "author": "V2EX",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "V2EX",
             "url": "https://www.v2ex.com",
@@ -2748,7 +2748,7 @@
         "version": "1.0.0",
         "author": "LeetCode",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "力扣",
             "url": "https://leetcode.cn",
@@ -2768,7 +2768,7 @@
         "version": "1.0.0",
         "author": "Mozilla",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "MDN",
             "url": "https://developer.mozilla.org",
@@ -2788,7 +2788,7 @@
         "version": "1.0.0",
         "author": "Docker Inc.",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Docker",
             "url": "https://www.docker.com",
@@ -2808,7 +2808,7 @@
         "version": "1.0.0",
         "author": "Cloud Native Computing Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "K8s",
             "url": "https://kubernetes.io",
@@ -2828,7 +2828,7 @@
         "version": "1.0.0",
         "author": "Python Software Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PyPI",
             "url": "https://pypi.org",
@@ -2848,7 +2848,7 @@
         "version": "1.0.0",
         "author": "GitHub",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "NPM",
             "url": "https://www.npmjs.com",
@@ -2868,7 +2868,7 @@
         "version": "1.0.0",
         "author": "Meta",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "React",
             "url": "https://react.dev",
@@ -2888,7 +2888,7 @@
         "version": "1.0.0",
         "author": "Evan You",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Vue.js",
             "url": "https://vuejs.org",
@@ -2908,7 +2908,7 @@
         "version": "1.0.0",
         "author": "CRRC",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "12306",
             "url": "https://www.12306.cn",
@@ -2928,7 +2928,7 @@
         "version": "1.0.0",
         "author": "CMA",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "中国天气",
             "url": "http://www.weather.com.cn",
@@ -2948,7 +2948,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "高德地图",
             "url": "https://www.amap.com",
@@ -2968,7 +2968,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Travel",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度地图",
             "url": "https://map.baidu.com",
@@ -2988,7 +2988,7 @@
         "version": "1.0.0",
         "author": "Meituan",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "大众点评",
             "url": "https://www.dianping.com",
@@ -3008,7 +3008,7 @@
         "version": "1.0.0",
         "author": "XiaChuFang",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "下厨房",
             "url": "https://www.xiachufang.com",
@@ -3028,7 +3028,7 @@
         "version": "1.0.0",
         "author": "Meishi",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "美食天下",
             "url": "https://www.meishichina.com",
@@ -3048,7 +3048,7 @@
         "version": "1.0.0",
         "author": "Keep",
         "category": "Life",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Keep",
             "url": "https://www.gotokeep.com",
@@ -3068,7 +3068,7 @@
         "version": "1.0.0",
         "author": "Amazon",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Goodreads",
             "url": "https://www.goodreads.com",
@@ -3088,7 +3088,7 @@
         "version": "1.0.0",
         "author": "Amazon",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Kindle",
             "url": "https://www.amazon.cn/kindle",
@@ -3108,7 +3108,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "微信读书",
             "url": "https://weread.qq.com",
@@ -3128,7 +3128,7 @@
         "version": "1.0.0",
         "author": "Xiaomi",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "多看阅读",
             "url": "https://www.duokan.com",
@@ -3148,7 +3148,7 @@
         "version": "1.0.0",
         "author": "A Medium Corporation",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Medium",
             "url": "https://medium.com",
@@ -3168,7 +3168,7 @@
         "version": "1.0.0",
         "author": "Wikimedia",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "维基百科",
             "url": "https://www.wikipedia.org",
@@ -3188,7 +3188,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度百科",
             "url": "https://baike.baidu.com",
@@ -3208,7 +3208,7 @@
         "version": "1.0.0",
         "author": "Alexandra Elbakyan",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Sci-Hub",
             "url": "https://sci-hub.se",
@@ -3228,7 +3228,7 @@
         "version": "1.0.0",
         "author": "Cornell University",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "arXiv",
             "url": "https://arxiv.org",
@@ -3248,7 +3248,7 @@
         "version": "1.0.0",
         "author": "Coursera Inc.",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Coursera",
             "url": "https://www.coursera.org",
@@ -3268,7 +3268,7 @@
         "version": "1.0.0",
         "author": "Udemy Inc.",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Udemy",
             "url": "https://www.udemy.com",
@@ -3288,7 +3288,7 @@
         "version": "1.0.0",
         "author": "Sapling Foundation",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TED",
             "url": "https://www.ted.com",
@@ -3308,7 +3308,7 @@
         "version": "1.0.0",
         "author": "Salman Khan",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "可汗学院",
             "url": "https://www.khanacademy.org",
@@ -3328,7 +3328,7 @@
         "version": "1.0.0",
         "author": "Duolingo",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "多邻国",
             "url": "https://www.duolingo.com",
@@ -3348,7 +3348,7 @@
         "version": "1.0.0",
         "author": "Quora",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Poe",
             "url": "https://poe.com",
@@ -3368,7 +3368,7 @@
         "version": "1.0.0",
         "author": "Perplexity",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Perplexity",
             "url": "https://www.perplexity.ai",
@@ -3388,7 +3388,7 @@
         "version": "1.0.0",
         "author": "Midjourney",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Midjourney",
             "url": "https://www.midjourney.com",
@@ -3408,7 +3408,7 @@
         "version": "1.0.0",
         "author": "HuggingFace",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Hugging Face",
             "url": "https://huggingface.co",
@@ -3428,7 +3428,7 @@
         "version": "1.0.0",
         "author": "PDD",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "拼多多",
             "url": "https://www.pinduoduo.com",
@@ -3448,7 +3448,7 @@
         "version": "1.0.0",
         "author": "Dewu",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "得物",
             "url": "https://www.dewu.com",
@@ -3468,7 +3468,7 @@
         "version": "1.0.0",
         "author": "Vipshop",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "唯品会",
             "url": "https://www.vip.com",
@@ -3488,7 +3488,7 @@
         "version": "1.0.0",
         "author": "Suning",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "苏宁易购",
             "url": "https://www.suning.com",
@@ -3508,7 +3508,7 @@
         "version": "1.0.0",
         "author": "Dangdang",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "当当网",
             "url": "http://www.dangdang.com",
@@ -3528,7 +3528,7 @@
         "version": "1.0.0",
         "author": "Mogu",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "蘑菇街",
             "url": "https://www.mogu.com",
@@ -3548,7 +3548,7 @@
         "version": "1.0.0",
         "author": "Xiaomi",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "小米商城",
             "url": "https://www.mi.com",
@@ -3568,7 +3568,7 @@
         "version": "1.0.0",
         "author": "Apple",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Apple",
             "url": "https://www.apple.com.cn",
@@ -3588,7 +3588,7 @@
         "version": "1.0.0",
         "author": "Huawei",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "华为商城",
             "url": "https://www.vmall.com",
@@ -3608,7 +3608,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "AliExpress",
             "url": "https://www.aliexpress.com",
@@ -3628,7 +3628,7 @@
         "version": "1.0.0",
         "author": "Amazon",
         "category": "Shopping",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Amazon",
             "url": "https://www.amazon.com",
@@ -3648,7 +3648,7 @@
         "version": "1.0.0",
         "author": "Atlassian",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Trello",
             "url": "https://trello.com",
@@ -3668,7 +3668,7 @@
         "version": "1.0.0",
         "author": "Salesforce",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Slack",
             "url": "https://slack.com",
@@ -3688,7 +3688,7 @@
         "version": "1.0.0",
         "author": "Zoom",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Zoom",
             "url": "https://zoom.us",
@@ -3708,7 +3708,7 @@
         "version": "1.0.0",
         "author": "Tencent",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "腾讯会议",
             "url": "https://meeting.tencent.com",
@@ -3728,7 +3728,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "钉钉",
             "url": "https://www.dingtalk.com",
@@ -3748,7 +3748,7 @@
         "version": "1.0.0",
         "author": "Grammarly",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Grammarly",
             "url": "https://www.grammarly.com",
@@ -3768,7 +3768,7 @@
         "version": "1.0.0",
         "author": "QuillBot",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "QuillBot",
             "url": "https://quillbot.com",
@@ -3788,7 +3788,7 @@
         "version": "1.0.0",
         "author": "DeepL",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "DeepL",
             "url": "https://www.deepl.com",
@@ -3808,7 +3808,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百度翻译",
             "url": "https://fanyi.baidu.com",
@@ -3828,7 +3828,7 @@
         "version": "1.0.0",
         "author": "NetEase",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "有道翻译",
             "url": "https://fanyi.youdao.com",
@@ -3848,7 +3848,7 @@
         "version": "1.0.0",
         "author": "Google",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "谷歌翻译",
             "url": "https://translate.google.com",
@@ -3868,7 +3868,7 @@
         "version": "1.0.0",
         "author": "ProcessOn",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "ProcessOn",
             "url": "https://www.processon.com",
@@ -3888,7 +3888,7 @@
         "version": "1.0.0",
         "author": "Lanhu",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "蓝湖",
             "url": "https://lanhuapp.com",
@@ -3908,7 +3908,7 @@
         "version": "1.0.0",
         "author": "ByteDance",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "幕布",
             "url": "https://mubu.com",
@@ -3928,7 +3928,7 @@
         "version": "1.0.0",
         "author": "JianGuo",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "坚果云",
             "url": "https://www.jianguoyun.com",
@@ -3948,7 +3948,7 @@
         "version": "1.0.0",
         "author": "Ookla",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Speedtest",
             "url": "https://www.speedtest.net",
@@ -3968,7 +3968,7 @@
         "version": "1.0.0",
         "author": "IP138",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "IP138",
             "url": "https://www.ip138.com",
@@ -3988,7 +3988,7 @@
         "version": "1.0.0",
         "author": "Caoliao",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "草料二维码",
             "url": "https://cli.im",
@@ -4008,7 +4008,7 @@
         "version": "1.0.0",
         "author": "Smallpdf",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Smallpdf",
             "url": "https://smallpdf.com",
@@ -4028,7 +4028,7 @@
         "version": "1.0.0",
         "author": "iLovePDF",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "iLovePDF",
             "url": "https://www.ilovepdf.com",
@@ -4048,7 +4048,7 @@
         "version": "1.0.0",
         "author": "Voormedia",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TinyPNG",
             "url": "https://tinypng.com",
@@ -4068,7 +4068,7 @@
         "version": "1.0.0",
         "author": "Kaleido",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "remove.bg",
             "url": "https://www.remove.bg",
@@ -4088,7 +4088,7 @@
         "version": "1.0.0",
         "author": "Dawn Labs",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Carbon",
             "url": "https://carbon.now.sh",
@@ -4108,7 +4108,7 @@
         "version": "1.0.0",
         "author": "JSON",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "JSON.cn",
             "url": "https://www.json.cn",
@@ -4128,7 +4128,7 @@
         "version": "1.0.0",
         "author": "BeJSON",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "BeJSON",
             "url": "https://www.bejson.com",
@@ -4148,7 +4148,7 @@
         "version": "1.0.0",
         "author": "Regex101",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Regex101",
             "url": "https://regex101.com",
@@ -4168,7 +4168,7 @@
         "version": "1.0.0",
         "author": "GitStar",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "GitStar",
             "url": "https://gitstar-ranking.com",
@@ -4188,7 +4188,7 @@
         "version": "1.0.0",
         "author": "HelloFont",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "字由",
             "url": "https://www.hellofont.cn",
@@ -4208,7 +4208,7 @@
         "version": "1.0.0",
         "author": "ZCool",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "站酷海洛",
             "url": "https://www.hellorf.com",
@@ -4228,7 +4228,7 @@
         "version": "1.0.0",
         "author": "VCG",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "视觉中国",
             "url": "https://www.vcg.com",
@@ -4248,7 +4248,7 @@
         "version": "1.0.0",
         "author": "Nipic",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "昵图网",
             "url": "http://www.nipic.com",
@@ -4268,7 +4268,7 @@
         "version": "1.0.0",
         "author": "68Design",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "68Design",
             "url": "https://www.68design.net",
@@ -4288,7 +4288,7 @@
         "version": "1.0.0",
         "author": "UI中国",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "UI中国",
             "url": "https://www.ui.cn",
@@ -4308,7 +4308,7 @@
         "version": "1.0.0",
         "author": "Abduzeedo",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Abduzeedo",
             "url": "https://abduzeedo.com",
@@ -4328,7 +4328,7 @@
         "version": "1.0.0",
         "author": "Muzhimao",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "拇指猫",
             "url": "https://www.muzhimao.com",
@@ -4348,7 +4348,7 @@
         "version": "1.0.0",
         "author": "The Paper",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "澎湃新闻",
             "url": "https://www.thepaper.cn",
@@ -4368,7 +4368,7 @@
         "version": "1.0.0",
         "author": "SouthCN",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "南方+",
             "url": "https://www.southcn.com",
@@ -4388,7 +4388,7 @@
         "version": "1.0.0",
         "author": "CCTV",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "央视网",
             "url": "https://www.cctv.com",
@@ -4408,7 +4408,7 @@
         "version": "1.0.0",
         "author": "Xinhua",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "新华网",
             "url": "http://www.xinhuanet.com",
@@ -4428,7 +4428,7 @@
         "version": "1.0.0",
         "author": "People",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "人民网",
             "url": "http://www.people.com.cn",
@@ -4448,7 +4448,7 @@
         "version": "1.0.0",
         "author": "Youth",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "中国青年网",
             "url": "http://www.youth.cn",
@@ -4468,7 +4468,7 @@
         "version": "1.0.0",
         "author": "China Daily",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "China Daily",
             "url": "https://www.chinadaily.com.cn",
@@ -4488,7 +4488,7 @@
         "version": "1.0.0",
         "author": "Global Times",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "环球网",
             "url": "https://www.huanqiu.com",
@@ -4508,7 +4508,7 @@
         "version": "1.0.0",
         "author": "Jiemodui",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "芥末堆",
             "url": "https://www.jiemodui.com",
@@ -4528,7 +4528,7 @@
         "version": "1.0.0",
         "author": "STCN",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "证券时报",
             "url": "https://www.stcn.com",
@@ -4548,7 +4548,7 @@
         "version": "1.0.0",
         "author": "Yicai",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "第一财经",
             "url": "https://www.yicai.com",
@@ -4568,7 +4568,7 @@
         "version": "1.0.0",
         "author": "Hexun",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "和讯网",
             "url": "https://www.hexun.com",
@@ -4588,7 +4588,7 @@
         "version": "1.0.0",
         "author": "JRJ",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "金融界",
             "url": "http://www.jrj.com.cn",
@@ -4608,7 +4608,7 @@
         "version": "1.0.0",
         "author": "NBD",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "每经网",
             "url": "http://www.nbd.com.cn",
@@ -4628,7 +4628,7 @@
         "version": "1.0.0",
         "author": "P5W",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "全景网",
             "url": "https://www.p5w.net",
@@ -4648,7 +4648,7 @@
         "version": "1.0.0",
         "author": "Investing",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "英为财情",
             "url": "https://cn.investing.com",
@@ -4668,7 +4668,7 @@
         "version": "1.0.0",
         "author": "Wind",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Wind",
             "url": "https://www.wind.com.cn",
@@ -4688,7 +4688,7 @@
         "version": "1.0.0",
         "author": "TuShare",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TuShare",
             "url": "https://tushare.pro",
@@ -4708,7 +4708,7 @@
         "version": "1.0.0",
         "author": "JoinQuant",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "聚宽",
             "url": "https://www.joinquant.com",
@@ -4728,7 +4728,7 @@
         "version": "1.0.0",
         "author": "Ricequant",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "米筐",
             "url": "https://www.ricequant.com",
@@ -4748,7 +4748,7 @@
         "version": "1.0.0",
         "author": "BigQuant",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "BigQuant",
             "url": "https://bigquant.com",
@@ -4768,7 +4768,7 @@
         "version": "1.0.0",
         "author": "Tiangolo",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "FastAPI",
             "url": "https://fastapi.tiangolo.com",
@@ -4788,7 +4788,7 @@
         "version": "1.0.0",
         "author": "Django Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Django",
             "url": "https://www.djangoproject.com",
@@ -4808,7 +4808,7 @@
         "version": "1.0.0",
         "author": "Pallets",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Flask",
             "url": "https://flask.palletsprojects.com",
@@ -4828,7 +4828,7 @@
         "version": "1.0.0",
         "author": "VMware",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Spring",
             "url": "https://spring.io",
@@ -4848,7 +4848,7 @@
         "version": "1.0.0",
         "author": "JetBrains",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Kotlin",
             "url": "https://kotlinlang.org",
@@ -4868,7 +4868,7 @@
         "version": "1.0.0",
         "author": "Rust Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Rust",
             "url": "https://www.rust-lang.org",
@@ -4888,7 +4888,7 @@
         "version": "1.0.0",
         "author": "Google",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Go",
             "url": "https://go.dev",
@@ -4908,7 +4908,7 @@
         "version": "1.0.0",
         "author": "PHP Group",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PHP",
             "url": "https://www.php.net",
@@ -4928,7 +4928,7 @@
         "version": "1.0.0",
         "author": "Taylor Otwell",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Laravel",
             "url": "https://laravel.com",
@@ -4948,7 +4948,7 @@
         "version": "1.0.0",
         "author": "PostgreSQL Group",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PostgreSQL",
             "url": "https://www.postgresql.org",
@@ -4968,7 +4968,7 @@
         "version": "1.0.0",
         "author": "Oracle",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "MySQL",
             "url": "https://www.mysql.com",
@@ -4988,7 +4988,7 @@
         "version": "1.0.0",
         "author": "MongoDB Inc.",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "MongoDB",
             "url": "https://www.mongodb.com",
@@ -5008,7 +5008,7 @@
         "version": "1.0.0",
         "author": "Redis Ltd.",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Redis",
             "url": "https://redis.io",
@@ -5028,7 +5028,7 @@
         "version": "1.0.0",
         "author": "Elastic",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Elasticsearch",
             "url": "https://www.elastic.co",
@@ -5048,7 +5048,7 @@
         "version": "1.0.0",
         "author": "F5",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Nginx",
             "url": "https://nginx.org",
@@ -5068,7 +5068,7 @@
         "version": "1.0.0",
         "author": "Apache Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Apache",
             "url": "https://www.apache.org",
@@ -5088,7 +5088,7 @@
         "version": "1.0.0",
         "author": "Vercel",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Vercel",
             "url": "https://vercel.com",
@@ -5108,7 +5108,7 @@
         "version": "1.0.0",
         "author": "Netlify",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Netlify",
             "url": "https://www.netlify.com",
@@ -5128,7 +5128,7 @@
         "version": "1.0.0",
         "author": "Postman",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Postman",
             "url": "https://www.postman.com",
@@ -5148,7 +5148,7 @@
         "version": "1.0.0",
         "author": "Twitter",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Bootstrap",
             "url": "https://getbootstrap.com",
@@ -5168,7 +5168,7 @@
         "version": "1.0.0",
         "author": "Adam Wathan",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Tailwind",
             "url": "https://tailwindcss.com",
@@ -5188,7 +5188,7 @@
         "version": "1.0.0",
         "author": "AntGroup",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Ant Design",
             "url": "https://ant.design",
@@ -5208,7 +5208,7 @@
         "version": "1.0.0",
         "author": "Element",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Element+",
             "url": "https://element-plus.org",
@@ -5228,7 +5228,7 @@
         "version": "1.0.0",
         "author": "Microsoft",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Azure",
             "url": "https://azure.microsoft.com",
@@ -5248,7 +5248,7 @@
         "version": "1.0.0",
         "author": "Vercel",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Next.js",
             "url": "https://nextjs.org",
@@ -5268,7 +5268,7 @@
         "version": "1.0.0",
         "author": "Evan You",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Vite",
             "url": "https://vitejs.dev",
@@ -5288,7 +5288,7 @@
         "version": "1.0.0",
         "author": "Microsoft",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TypeScript",
             "url": "https://www.typescriptlang.org",
@@ -5308,7 +5308,7 @@
         "version": "1.0.0",
         "author": "Jarred Sumner",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Bun",
             "url": "https://bun.sh",
@@ -5328,7 +5328,7 @@
         "version": "1.0.0",
         "author": "Ryan Dahl",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Deno",
             "url": "https://deno.com",
@@ -5348,7 +5348,7 @@
         "version": "1.0.0",
         "author": "Google",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Flutter",
             "url": "https://flutter.dev",
@@ -5368,7 +5368,7 @@
         "version": "1.0.0",
         "author": "Meta",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PyTorch",
             "url": "https://pytorch.org",
@@ -5388,7 +5388,7 @@
         "version": "1.0.0",
         "author": "Google",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "TensorFlow",
             "url": "https://www.tensorflow.org",
@@ -5408,7 +5408,7 @@
         "version": "1.0.0",
         "author": "Replicate",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Replicate",
             "url": "https://replicate.com",
@@ -5428,7 +5428,7 @@
         "version": "1.0.0",
         "author": "Baichuan",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "百川智能",
             "url": "https://www.baichuan-ai.com",
@@ -5448,7 +5448,7 @@
         "version": "1.0.0",
         "author": "Alibaba",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "通义千问",
             "url": "https://tongyi.aliyun.com",
@@ -5468,7 +5468,7 @@
         "version": "1.0.0",
         "author": "Baidu",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "文心一言",
             "url": "https://yiyan.baidu.com",
@@ -5488,7 +5488,7 @@
         "version": "1.0.0",
         "author": "SenseTime",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "商量",
             "url": "https://chat.sensetime.com",
@@ -5508,7 +5508,7 @@
         "version": "1.0.0",
         "author": "iFLYTEK",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "讯飞星火",
             "url": "https://xinghuo.xfyun.cn",
@@ -5528,7 +5528,7 @@
         "version": "1.0.0",
         "author": "Yi AI",
         "category": "AI",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "零一万物",
             "url": "https://www.lingyiwanwu.com",
@@ -5548,7 +5548,7 @@
         "version": "1.0.0",
         "author": "Canva",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Canva",
             "url": "https://www.canva.com",
@@ -5568,7 +5568,7 @@
         "version": "1.0.0",
         "author": "Unsplash",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Unsplash",
             "url": "https://unsplash.com",
@@ -5588,7 +5588,7 @@
         "version": "1.0.0",
         "author": "Pexels",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Pexels",
             "url": "https://www.pexels.com",
@@ -5608,7 +5608,7 @@
         "version": "1.0.0",
         "author": "Pixabay",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Pixabay",
             "url": "https://pixabay.com",
@@ -5628,7 +5628,7 @@
         "version": "1.0.0",
         "author": "Freepik",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Flaticon",
             "url": "https://www.flaticon.com",
@@ -5648,7 +5648,7 @@
         "version": "1.0.0",
         "author": "Shutterstock",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Shutterstock",
             "url": "https://www.shutterstock.com",
@@ -5668,7 +5668,7 @@
         "version": "1.0.0",
         "author": "Adobe",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Adobe CC",
             "url": "https://www.adobe.com/creativecloud.html",
@@ -5688,7 +5688,7 @@
         "version": "1.0.0",
         "author": "Sketch B.V.",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Sketch",
             "url": "https://www.sketch.com",
@@ -5708,7 +5708,7 @@
         "version": "1.0.0",
         "author": "Principle",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Principle",
             "url": "https://principleformac.com",
@@ -5728,7 +5728,7 @@
         "version": "1.0.0",
         "author": "Abstract",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Abstract",
             "url": "https://www.abstract.com",
@@ -5748,7 +5748,7 @@
         "version": "1.0.0",
         "author": "Zeplin",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Zeplin",
             "url": "https://zeplin.io",
@@ -5768,7 +5768,7 @@
         "version": "1.0.0",
         "author": "IconJar",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "IconJar",
             "url": "https://geticonjar.com",
@@ -5788,7 +5788,7 @@
         "version": "1.0.0",
         "author": "Eagle",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Eagle",
             "url": "https://eagle.cool",
@@ -5808,7 +5808,7 @@
         "version": "1.0.0",
         "author": "Linktree",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Linktree",
             "url": "https://linktr.ee",
@@ -5828,7 +5828,7 @@
         "version": "1.0.0",
         "author": "Product Hunt",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Product Hunt",
             "url": "https://www.producthunt.com",
@@ -5848,7 +5848,7 @@
         "version": "1.0.0",
         "author": "Stripe",
         "category": "Social",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Indie Hackers",
             "url": "https://www.indiehackers.com",
@@ -5868,7 +5868,7 @@
         "version": "1.0.0",
         "author": "Hashnode",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Hashnode",
             "url": "https://hashnode.com",
@@ -5888,7 +5888,7 @@
         "version": "1.0.0",
         "author": "Forem",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "DEV.to",
             "url": "https://dev.to",
@@ -5908,7 +5908,7 @@
         "version": "1.0.0",
         "author": "Appinn",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "小众软件",
             "url": "https://www.appinn.com",
@@ -5928,7 +5928,7 @@
         "version": "1.0.0",
         "author": "Ruanyifeng",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "阮一峰博客",
             "url": "http://www.ruanyifeng.com/blog/",
@@ -5948,7 +5948,7 @@
         "version": "1.0.0",
         "author": "Liaoxuefeng",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "廖雪峰教程",
             "url": "https://www.liaoxuefeng.com",
@@ -5968,7 +5968,7 @@
         "version": "1.0.0",
         "author": "Geekbang",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "极客时间",
             "url": "https://time.geekbang.org",
@@ -5988,7 +5988,7 @@
         "version": "1.0.0",
         "author": "Synced",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "机器之心",
             "url": "https://www.jiqizhixin.com",
@@ -6008,7 +6008,7 @@
         "version": "1.0.0",
         "author": "GeekPark",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "极客公园",
             "url": "https://www.geekpark.net",
@@ -6028,7 +6028,7 @@
         "version": "1.0.0",
         "author": "WJX",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "问卷星",
             "url": "https://www.wjx.cn",
@@ -6048,7 +6048,7 @@
         "version": "1.0.0",
         "author": "Jinshuju",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "金数据",
             "url": "https://jinshuju.net",
@@ -6068,7 +6068,7 @@
         "version": "1.0.0",
         "author": "Lucid Software",
         "category": "Design",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Lucidchart",
             "url": "https://www.lucidchart.com",
@@ -6088,7 +6088,7 @@
         "version": "1.0.0",
         "author": "Miro",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Miro",
             "url": "https://miro.com",
@@ -6108,7 +6108,7 @@
         "version": "1.0.0",
         "author": "CodeSandbox",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "CodeSandbox",
             "url": "https://codesandbox.io",
@@ -6128,7 +6128,7 @@
         "version": "1.0.0",
         "author": "CodePen",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "CodePen",
             "url": "https://codepen.io",
@@ -6148,7 +6148,7 @@
         "version": "1.0.0",
         "author": "StackBlitz",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "StackBlitz",
             "url": "https://stackblitz.com",
@@ -6168,7 +6168,7 @@
         "version": "1.0.0",
         "author": "Replit",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Replit",
             "url": "https://replit.com",
@@ -6188,7 +6188,7 @@
         "version": "1.0.0",
         "author": "GraphQL Foundation",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "GraphQL",
             "url": "https://graphql.org",
@@ -6208,7 +6208,7 @@
         "version": "1.0.0",
         "author": "Apollo",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Apollo",
             "url": "https://www.apollographql.com",
@@ -6228,7 +6228,7 @@
         "version": "1.0.0",
         "author": "Supabase",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Supabase",
             "url": "https://supabase.com",
@@ -6248,7 +6248,7 @@
         "version": "1.0.0",
         "author": "Google",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Firebase",
             "url": "https://firebase.google.com",
@@ -6268,7 +6268,7 @@
         "version": "1.0.0",
         "author": "Strapi",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Strapi",
             "url": "https://strapi.io",
@@ -6288,7 +6288,7 @@
         "version": "1.0.0",
         "author": "Sanity",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Sanity",
             "url": "https://www.sanity.io",
@@ -6308,7 +6308,7 @@
         "version": "1.0.0",
         "author": "Jenkins",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Jenkins",
             "url": "https://www.jenkins.io",
@@ -6328,7 +6328,7 @@
         "version": "1.0.0",
         "author": "CircleCI",
         "category": "Development",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "CircleCI",
             "url": "https://circleci.com",
@@ -6348,7 +6348,7 @@
         "version": "1.0.0",
         "author": "Atlassian",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Confluence",
             "url": "https://www.atlassian.com/software/confluence",
@@ -6368,7 +6368,7 @@
         "version": "1.0.0",
         "author": "Atlassian",
         "category": "Productivity",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Jira",
             "url": "https://www.atlassian.com/software/jira",
@@ -6388,7 +6388,7 @@
         "version": "1.0.0",
         "author": "Baiteng",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "佰腾网",
             "url": "https://www.baiteng.cn",
@@ -6408,7 +6408,7 @@
         "version": "1.0.0",
         "author": "SooPAT",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "SooPAT",
             "url": "http://www.soopat.com",
@@ -6428,7 +6428,7 @@
         "version": "1.0.0",
         "author": "PKU Law",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "北大法宝",
             "url": "https://www.pkulaw.com",
@@ -6448,7 +6448,7 @@
         "version": "1.0.0",
         "author": "Itslaw",
         "category": "Tools",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "无讼",
             "url": "https://www.itslaw.com",
@@ -6468,7 +6468,7 @@
         "version": "1.0.0",
         "author": "PwC",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "PwC",
             "url": "https://www.pwc.com",
@@ -6488,7 +6488,7 @@
         "version": "1.0.0",
         "author": "Deloitte",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "德勤",
             "url": "https://www2.deloitte.com",
@@ -6508,7 +6508,7 @@
         "version": "1.0.0",
         "author": "EY",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "安永",
             "url": "https://www.ey.com",
@@ -6528,7 +6528,7 @@
         "version": "1.0.0",
         "author": "KPMG",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "毕马威",
             "url": "https://home.kpmg",
@@ -6548,7 +6548,7 @@
         "version": "1.0.0",
         "author": "McKinsey",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "麦肯锡",
             "url": "https://www.mckinsey.com",
@@ -6568,7 +6568,7 @@
         "version": "1.0.0",
         "author": "BCG",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "BCG",
             "url": "https://www.bcg.com",
@@ -6588,7 +6588,7 @@
         "version": "1.0.0",
         "author": "Bain",
         "category": "Finance",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "贝恩",
             "url": "https://www.bain.com",
@@ -6608,7 +6608,7 @@
         "version": "1.0.0",
         "author": "Economist",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "经济学人",
             "url": "https://www.economist.com",
@@ -6628,7 +6628,7 @@
         "version": "1.0.0",
         "author": "Financial Times",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "金融时报",
             "url": "https://www.ft.com",
@@ -6648,7 +6648,7 @@
         "version": "1.0.0",
         "author": "Dow Jones",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "华尔街日报",
             "url": "https://www.wsj.com",
@@ -6668,7 +6668,7 @@
         "version": "1.0.0",
         "author": "Bloomberg",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "彭博社",
             "url": "https://www.bloomberg.com",
@@ -6688,7 +6688,7 @@
         "version": "1.0.0",
         "author": "Thomson Reuters",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "路透社",
             "url": "https://www.reuters.com",
@@ -6708,7 +6708,7 @@
         "version": "1.0.0",
         "author": "Guardian Media",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "卫报",
             "url": "https://www.theguardian.com",
@@ -6728,7 +6728,7 @@
         "version": "1.0.0",
         "author": "NYT",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "纽约时报",
             "url": "https://www.nytimes.com",
@@ -6748,7 +6748,7 @@
         "version": "1.0.0",
         "author": "Forbes",
         "category": "News",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "福布斯",
             "url": "https://www.forbes.com",
@@ -6768,7 +6768,7 @@
         "version": "1.0.0",
         "author": "Elsevier",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "ScienceDirect",
             "url": "https://www.sciencedirect.com",
@@ -6788,7 +6788,7 @@
         "version": "1.0.0",
         "author": "Springer Nature",
         "category": "Education",
-        "isWindowApp": true,
+        "isWindowApp": false,
         "shortcut": {
             "title": "Nature",
             "url": "https://www.nature.com",
