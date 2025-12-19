@@ -7,6 +7,9 @@
         "version": "1.0.0",
         "author": "Gabriele Cirulli",
         "category": "Game",
+        "tags": [
+            "窗口应用"
+        ],
         "shortcut": {
             "title": "2048",
             "url": "https://play2048.co/",
@@ -25,6 +28,9 @@
         "version": "1.0.0",
         "author": "Excalidraw",
         "category": "Productivity",
+        "tags": [
+            "窗口应用"
+        ],
         "shortcut": {
             "title": "Excalidraw",
             "url": "https://excalidraw.com/",
@@ -43,6 +49,9 @@
         "version": "1.85.0",
         "author": "Microsoft",
         "category": "Development",
+        "tags": [
+            "窗口应用"
+        ],
         "shortcut": {
             "title": "VS Code",
             "url": "https://vscode.dev",
