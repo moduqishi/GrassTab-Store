@@ -15,8 +15,15 @@
         }
     ],
     "featuredApps": [
-        "com.game.2048",
-        "com.dev.vscode"
+        "com.douyin.www",
+        "com.iqiyi.www",
+        "com.notion.www",
+        "com.sspai.www",
+        "com.zhihu.www",
+        "com.deepseek.www",
+        "com.toutiao.www",
+        "com.feishu.www",
+        "com.gitee.www"
     ],
     "featuredWidgets": [
         "com.widget.weather.simple"
