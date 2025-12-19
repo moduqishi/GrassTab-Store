@@ -1,0 +1,42 @@
+[
+    {
+        "id": "com.widget.clock.analog",
+        "name": "模拟时钟",
+        "description": "一款经典的模拟时钟小组件 (示例)",
+        "icon": "clock",
+        "version": "1.0.0",
+        "author": "System",
+        "category": "Widget",
+        "shortcut": {
+            "title": "Analog Clock",
+            "type": "widget",
+            "widgetType": "clock",
+            "size": {
+                "w": 2,
+                "h": 2
+            },
+            "color": "from-gray-700 to-gray-900",
+            "isApp": false
+        }
+    },
+    {
+        "id": "com.widget.weather.simple",
+        "name": "天气预报",
+        "description": "简约风格的天气小组件",
+        "icon": "cloud",
+        "version": "1.0.0",
+        "author": "System",
+        "category": "Widget",
+        "shortcut": {
+            "title": "Weather",
+            "type": "widget",
+            "widgetType": "weather",
+            "size": {
+                "w": 2,
+                "h": 1
+            },
+            "color": "from-blue-400 to-blue-600",
+            "isApp": false
+        }
+    }
+]

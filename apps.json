@@ -1,0 +1,56 @@
+[
+    {
+        "id": "com.game.2048",
+        "name": "2048",
+        "description": "经典的数字拼接游戏",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/1200px-2048_logo.svg.png",
+        "version": "1.0.0",
+        "author": "Gabriele Cirulli",
+        "category": "Game",
+        "shortcut": {
+            "title": "2048",
+            "url": "https://play2048.co/",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-yellow-400 to-orange-500",
+            "iconType": "unavatar",
+            "customIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/1200px-2048_logo.svg.png"
+        }
+    },
+    {
+        "id": "com.tool.excalidraw",
+        "name": "Excalidraw",
+        "description": "手绘风格的虚拟白板协作工具",
+        "icon": "https://excalidraw.com/apple-touch-icon.png",
+        "version": "1.0.0",
+        "author": "Excalidraw",
+        "category": "Productivity",
+        "shortcut": {
+            "title": "Excalidraw",
+            "url": "https://excalidraw.com/",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-purple-500 to-pink-500",
+            "iconType": "unavatar",
+            "customIcon": "https://excalidraw.com/apple-touch-icon.png"
+        }
+    },
+    {
+        "id": "com.dev.vscode",
+        "name": "VS Code Web",
+        "description": "运行在浏览器中的 VS Code",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+        "version": "1.85.0",
+        "author": "Microsoft",
+        "category": "Development",
+        "shortcut": {
+            "title": "VS Code",
+            "url": "https://vscode.dev",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-blue-500 to-blue-600",
+            "iconType": "unavatar",
+            "customIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+        }
+    }
+]
