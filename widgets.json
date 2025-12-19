@@ -2,15 +2,16 @@
     {
         "id": "com.widget.clock.analog",
         "name": "模拟时钟",
-        "description": "一款经典的模拟时钟小组件 (示例)",
+        "description": "一款经典的模拟时钟小组件",
         "icon": "clock",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "System",
         "category": "Widget",
         "shortcut": {
             "title": "Analog Clock",
             "type": "widget",
-            "widgetType": "clock",
+            "widgetType": "iframe",
+            "widgetContent": "https://moduqishi.github.io/GrassTab-Store/widgets/clock.html",
             "size": {
                 "w": 2,
                 "h": 2
@@ -24,18 +25,40 @@
         "name": "天气预报",
         "description": "简约风格的天气小组件",
         "icon": "cloud",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "System",
         "category": "Widget",
         "shortcut": {
             "title": "Weather",
             "type": "widget",
-            "widgetType": "weather",
+            "widgetType": "iframe",
+            "widgetContent": "https://moduqishi.github.io/GrassTab-Store/widgets/weather.html",
             "size": {
                 "w": 2,
                 "h": 1
             },
             "color": "from-blue-400 to-blue-600",
+            "isApp": false
+        }
+    },
+    {
+        "id": "com.widget.calendar.simple",
+        "name": "日历",
+        "description": "查看当前日期",
+        "icon": "calendar",
+        "version": "1.0.1",
+        "author": "System",
+        "category": "Widget",
+        "shortcut": {
+            "title": "Calendar",
+            "type": "widget",
+            "widgetType": "iframe",
+            "widgetContent": "https://moduqishi.github.io/GrassTab-Store/widgets/calendar.html",
+            "size": {
+                "w": 2,
+                "h": 2
+            },
+            "color": "from-white to-gray-100",
             "isApp": false
         }
     }

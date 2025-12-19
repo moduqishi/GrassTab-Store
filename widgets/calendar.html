@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .header {
+            background-color: #ef4444;
+            color: white;
+            font-size: 4vmin;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 2vmin 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -1vmin;
+        }
+
+        .weekday {
+            color: #9ca3af;
+            font-size: 5vmin;
+            font-weight: 500;
+        }
+
+        .day {
+            font-size: 25vmin;
+            font-weight: 300;
+            letter-spacing: -0.05em;
+            line-height: 1;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="month">MONTH</div>
+    <div class="content">
+        <div class="weekday" id="weekday">Weekday</div>
+        <div class="day" id="day">01</div>
+    </div>
+
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const month = now.toLocaleDateString('en-US', { month: 'long' });
+            const weekday = now.toLocaleDateString('en-US', { weekday: 'long' });
+            const day = now.getDate();
+
+            document.getElementById('month').textContent = month;
+            document.getElementById('weekday').textContent = weekday;
+            document.getElementById('day').textContent = day;
+        }
+        updateDate();
+        // Update at midnight, but for simplicity just check every minute
+        setInterval(updateDate, 60000);
+    </script>
+</body>
+
+</html>

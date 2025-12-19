@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #60a5fa, #2563eb);
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            user-select: none;
+            padding: 5vmin;
+            box-sizing: border-box;
+        }
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .location {
+            font-size: 4vmin;
+            font-weight: 600;
+            opacity: 0.8;
+            display: block;
+        }
+
+        .temp {
+            font-size: 12vmin;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .icon-container {
+            opacity: 0.9;
+        }
+
+        /* Simple Cloud Sun Icon SVG substitute */
+        .icon-svg {
+            width: 8vmin;
+            height: 8vmin;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .bottom-row {
+            display: flex;
+            flex-col;
+            gap: 1vmin;
+        }
+
+        .condition {
+            font-size: 4vmin;
+            font-weight: 500;
+            display: block;
+        }
+
+        .high-low {
+            font-size: 3.5vmin;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-row">
+        <div>
+            <span class="location">Cupertino</span>
+            <div class="temp">72°</div>
+        </div>
+        <div class="icon-container">
+            <!-- Lucide CloudSun equivalent SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24">
+                <path d="M12 2v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="M20 12h2"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+                <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="bottom-row">
+        <span class="condition">Sunny</span>
+        <span class="high-low">H:76° L:62°</span>
+    </div>
+</body>
+
+</html>
