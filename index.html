@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrassTab Store Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d0d12;
+            color: white;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Apple-style scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Utility for hiding scrollbar but keeping functionality */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .line-clamp-1 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="flex h-screen w-screen overflow-hidden bg-[#0d0d12]">
+
+    <!-- Sidebar -->
+    <div id="sidebar"
+        class="w-60 flex-shrink-0 flex flex-col h-full border-r border-white/5 bg-white/[0.02] backdrop-blur-xl relative z-20 overflow-hidden">
+        <div class="p-6 h-full flex flex-col">
+            <!-- Search -->
+            <div
+                class="flex items-center space-x-2 bg-white/10 rounded-lg px-3 py-2 mb-6 border border-white/5 focus-within:bg-white/15 focus-within:border-white/20 transition-all flex-shrink-0">
+                <i data-lucide="search" class="text-gray-400 w-4 h-4"></i>
+                <input type="text" id="search-input" placeholder="Search"
+                    class="bg-transparent border-none focus:outline-none text-sm w-full placeholder-gray-500 text-white">
+            </div>
+
+            <nav id="sidebar-nav" class="space-y-1 overflow-y-auto overflow-x-hidden flex-1 scrollbar-hide">
+                <!-- Content injected by JS -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content"
+        class="flex-1 h-full overflow-y-auto scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+        <div class="p-8 w-full min-h-full max-w-[1920px] mx-auto">
+            <div id="content-area" class="animate-fade-in space-y-12">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- App Detail Modal Overlay -->
+    <div id="modal-overlay"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div id="modal-content"
+            class="bg-[#1c1c1e] w-full max-w-2xl rounded-2xl shadow-2xl border border-white/10 overflow-hidden transform scale-95 transition-transform duration-300">
+            <!-- Injected by JS -->
+        </div>
+    </div>
+
+    <script>
+        // --- Mock Data (Based on real data) ---
+        const HOME_DATA = {
+            "hero": [
+                {
+                    "id": "welcome_banner",
+                    "title": "Welcome to GrassTab Store",
+                    "subtitle": "Discover amazing apps & widgets.",
+                    "description": "全新的体验，从这里开始。",
+                    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+                    "action": { "type": "link", "label": "Explore", "url": "#apps" },
+                    "style": "dark"
+                }
+            ],
+            "featuredApps": ["com.douyin.www", "com.iqiyi.www", "com.notion.www", "com.sspai.www", "com.zhihu.www", "com.deepseek.www", "com.toutiao.www", "com.feishu.www", "com.gitee.www"],
+            "featuredWidgets": ["com.widget.weather.simple"]
+        };
+
+        const WIDGETS_DATA = [
+            {
+                "id": "com.widget.clock.analog",
+                "name": "模拟时钟",
+                "description": "一款经典的模拟时钟小组件",
+                "icon": "clock",
+                "category": "Clock",
+                "shortcut": { "title": "Analog Clock", "type": "widget" }
+            },
+            {
+                "id": "com.widget.weather.simple",
+                "name": "天气预报",
+                "description": "简约风格的天气小组件",
+                "icon": "cloud",
+                "category": "Weather",
+                "shortcut": { "title": "Weather", "type": "widget" }
+            },
+            {
+                "id": "com.widget.calendar.simple",
+                "name": "日历",
+                "description": "查看当前日期",
+                "icon": "calendar",
+                "category": "Utility",
+                "shortcut": { "title": "Calendar", "type": "widget" }
+            }
+        ];
+
+        // First 20 apps from the list + featured ones
+        const APPS_DATA = [
+            { "id": "com.qq.mail", "name": "QQ邮箱", "description": "提供安全、稳定、快速、便捷的电子邮件服务", "icon": "https://unavatar.io/mail.qq.com?fallback=https://icon.horse/icon/mail.qq.com", "category": "Productivity" },
+            { "id": "com.alipay.www", "name": "支付宝", "description": "值得信赖的数字生活开放平台", "icon": "https://unavatar.io/alipay.com?fallback=https://icon.horse/icon/alipay.com", "category": "Finance" },
+            { "id": "com.douyin.www", "name": "抖音", "description": "记录美好生活", "icon": "https://unavatar.io/douyin.com?fallback=https://icon.horse/icon/douyin.com", "category": "Video" },
+            { "id": "com.feishu.www", "name": "飞书", "description": "先进企业协作与管理平台", "icon": "https://unavatar.io/feishu.cn?fallback=https://icon.horse/icon/feishu.cn", "category": "Productivity" },
+            { "id": "com.v2ex.www", "name": "V2EX", "description": "创意工作者们的社区", "icon": "https://unavatar.io/v2ex.com?fallback=https://icon.horse/icon/v2ex.com", "category": "Social" },
+            { "id": "com.gitee.www", "name": "Gitee", "description": "码云 - 开源项目托管平台", "icon": "https://unavatar.io/gitee.com?fallback=https://icon.horse/icon/gitee.com", "category": "Development" },
+            { "id": "com.163.music", "name": "网易云音乐", "description": "专注于发现与分享的音乐产品", "icon": "https://unavatar.io/music.163.com?fallback=https://icon.horse/icon/music.163.com", "category": "Music" },
+            { "id": "com.pan.baidu", "name": "百度网盘", "description": "个人云存储及资源共享平台", "icon": "https://unavatar.io/pan.baidu.com?fallback=https://icon.horse/icon/pan.baidu.com", "category": "Tools" },
+            { "id": "com.qunar.www", "name": "去哪儿", "description": "领先的旅游搜索引擎", "icon": "https://unavatar.io/qunar.com?fallback=https://icon.horse/icon/qunar.com", "category": "Travel" },
+            { "id": "com.processon.www", "name": "ProcessOn", "description": "免费在线作图、实时协作", "icon": "https://unavatar.io/processon.com?fallback=https://icon.horse/icon/processon.com", "category": "Design" },
+            { "id": "com.36kr.www", "name": "36氪", "description": "新经济创投新闻资讯", "icon": "https://unavatar.io/36kr.com?fallback=https://icon.horse/icon/36kr.com", "category": "News" },
+            { "id": "com.huxiu.www", "name": "虎嗅网", "description": "深度商业科技资讯平台", "icon": "https://unavatar.io/huxiu.com?fallback=https://icon.horse/icon/huxiu.com", "category": "News" },
+            { "id": "com.sspai.www", "name": "少数派", "description": "高效工作与数字生活指南", "icon": "https://unavatar.io/sspai.com?fallback=https://icon.horse/icon/sspai.com", "category": "Productivity" },
+            { "id": "com.github.www", "name": "GitHub", "description": "全球最大的开源代码托管平台", "icon": "https://unavatar.io/github.com?fallback=https://icon.horse/icon/github.com", "category": "Development" },
+            { "id": "com.stackoverflow.www", "name": "Stack Overflow", "description": "全球最大的编程问答社区", "icon": "https://unavatar.io/stackoverflow.com?fallback=https://icon.horse/icon/stackoverflow.com", "category": "Development" },
+            { "id": "com.notion.www", "name": "Notion", "description": "一站式工作空间、笔记与知识库", "icon": "https://unavatar.io/notion.so?fallback=https://icon.horse/icon/notion.so", "category": "Productivity" },
+            { "id": "com.iqiyi.www", "name": "爱奇艺", "description": "高清正版影视视频站", "icon": "https://unavatar.io/iqiyi.com?fallback=https://icon.horse/icon/iqiyi.com", "category": "Video" },
+            { "id": "com.zhihu.www", "name": "知乎", "description": "有问题，就会有答案", "icon": "https://unavatar.io/zhihu.com?fallback=https://icon.horse/icon/zhihu.com", "category": "Social" },
+            { "id": "com.deepseek.www", "name": "DeepSeek", "description": "深度求索", "icon": "https://unavatar.io/deepseek.com?fallback=https://icon.horse/icon/deepseek.com", "category": "Tools" },
+            { "id": "com.toutiao.www", "name": "今日头条", "description": "你关心的，才是头条", "icon": "https://unavatar.io/toutiao.com?fallback=https://icon.horse/icon/toutiao.com", "category": "News" }
+        ];
+
+        // --- State ---
+        let viewMode = 'discover'; // 'discover', 'apps', 'widgets'
+        let activeCategory = null;
+        let searchQuery = '';
+        let apps = APPS_DATA;
+        let widgets = WIDGETS_DATA;
+        let homeData = HOME_DATA;
+
+        // --- Categories from Data ---
+        const getCategories = (items) => [...new Set(items.map(i => i.category))];
+        const getCounts = () => {
+            const counts = { 'all_apps': apps.length, 'all_widgets': widgets.length };
+            [...apps, ...widgets].forEach(i => {
+                counts[i.category] = (counts[i.category] || 0) + 1;
+            });
+            return counts;
+        };
+
+        // --- Icons Mapping ---
+        const getIconNameForCategory = (cat) => {
+            const map = {
+                'game': 'gamepad-2', 'productivity': 'briefcase', 'development': 'code', 'design': 'pen-tool',
+                'weather': 'cloud', 'clock': 'clock', 'utility': 'calendar', 'widget': 'layers',
+                'ai': 'brain', 'education': 'graduation-cap', 'finance': 'credit-card', 'life': 'heart',
+                'music': 'music', 'news': 'newspaper', 'shopping': 'shopping-bag', 'social': 'users',
+                'tools': 'wrench', 'travel': 'plane', 'video': 'video', 'shopping': 'shopping-bag'
+            };
+            return map[cat.toLowerCase()] || 'box';
+        };
+
+        // --- Render Functions ---
+
+        function renderSidebar() {
+            const nav = document.getElementById('sidebar-nav');
+            const counts = getCounts();
+            const appCats = getCategories(apps);
+            const widgetCats = getCategories(widgets);
+
+            const renderItem = (label, icon, isActive, onClick, count, level = 0) => {
+                const btn = document.createElement('button');
+                btn.className = `w-full flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 mb-1 text-left group ${isActive ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' : 'text-gray-400 hover:bg-white/5 hover:text-white'} ${level > 0 ? 'pl-8 text-xs' : ''}`;
+                btn.onclick = onClick;
+
+                let iconHtml = `<i data-lucide="${icon}" class="mr-3 w-[18px] h-[18px] flex-shrink-0 ${isActive ? 'text-white' : 'text-gray-500 group-hover:text-gray-300'}"></i>`;
+
+                btn.innerHTML = `
+                    ${iconHtml}
+                    <span class="truncate flex-1">${label}</span>
+                    ${count !== undefined ? `<span class="text-[10px] ml-2 px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-white/10 text-gray-500'}">${count}</span>` : ''}
+                `;
+                return btn;
+            };
+
+            nav.innerHTML = '';
+
+            // Discover
+            nav.appendChild(renderItem('Discover', 'sparkles', viewMode === 'discover' && !searchQuery, () => setViewMode('discover')));
+
+            // Apps Header
+            const appsHeader = document.createElement('div');
+            appsHeader.className = "pt-4 pb-2 px-3 text-xs font-bold text-gray-500 uppercase tracking-wider";
+            appsHeader.innerText = "APPS";
+            nav.appendChild(appsHeader);
+
+            // All Apps
+            nav.appendChild(renderItem('All Apps', 'box', viewMode === 'apps' && !activeCategory && !searchQuery, () => setViewMode('apps'), counts['all_apps']));
+
+            // App Categories
+            appCats.forEach(cat => {
+                nav.appendChild(renderItem(cat, getIconNameForCategory(cat), viewMode === 'apps' && activeCategory === cat && !searchQuery, () => setViewMode('apps', cat), counts[cat], 1));
+            });
+
+            // Widgets Header
+            const widgetsHeader = document.createElement('div');
+            widgetsHeader.className = "pt-4 pb-2 px-3 text-xs font-bold text-gray-500 uppercase tracking-wider";
+            widgetsHeader.innerText = "WIDGETS";
+            nav.appendChild(widgetsHeader);
+
+            // All Widgets
+            nav.appendChild(renderItem('All Widgets', 'layers', viewMode === 'widgets' && !activeCategory && !searchQuery, () => setViewMode('widgets'), counts['all_widgets']));
+
+            // Widget Categories
+            widgetCats.forEach(cat => {
+                nav.appendChild(renderItem(cat, getIconNameForCategory(cat), viewMode === 'widgets' && activeCategory === cat && !searchQuery, () => setViewMode('widgets', cat), counts[cat], 1));
+            });
+
+            lucide.createIcons();
+        }
+
+        function renderAppCard(item) {
+            const isWidget = ['Clock', 'Weather', 'Utility', 'Widget'].includes(item.category);
+            // Check if icon is URL or lucide name (simple check)
+            const isUrlIcon = item.icon.includes('http') || item.icon.includes('data:');
+
+            const div = document.createElement('div');
+            div.className = "relative group cursor-pointer animate-fade-in";
+            div.onclick = () => showDetail(item);
+
+            const iconHtml = isUrlIcon
+                ? `<img src="${item.icon}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy">`
+                : `<div class="text-3xl text-gray-500 flex items-center justify-center w-full h-full"><i data-lucide="${item.icon}"></i></div>`;
+
+            div.innerHTML = `
+                <div class="flex flex-col items-center p-2 transition-transform duration-200 hover:scale-105">
+                     <div class="relative w-20 h-20 mb-3">
+                        <div class="w-full h-full rounded-[22%] overflow-hidden bg-[#1c1c1e] shadow-xl group-hover:shadow-2xl transition-all border border-white/5 flex items-center justify-center">
+                            ${iconHtml}
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center w-full px-1 text-center relative">
+                        <div class="relative inline-flex items-center justify-center max-w-full">
+                            <h3 class="text-white font-medium text-[13px] leading-tight line-clamp-1 break-all group-hover:text-blue-400 transition-colors">
+                                ${item.name}
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            `;
+            return div;
+        }
+
+        function renderHero(hero) {
+            const div = document.createElement('div');
+            div.className = "relative w-full h-[320px] rounded-3xl overflow-hidden mb-10 group shadow-2xl";
+            div.innerHTML = `
+                <img src="${hero.image}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Banner" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-10 max-w-2xl animate-fade-in">
+                    <p class="text-blue-400 font-bold tracking-widest text-xs uppercase mb-2">
+                        ${hero.subtitle}
+                    </p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                        ${hero.title}
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-6 line-clamp-2">
+                        ${hero.description}
+                    </p>
+                    <button class="px-8 py-3 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-colors shadow-lg shadow-white/10">
+                        ${hero.action.label}
+                    </button>
+                </div>
+            `;
+            return div;
+        }
+
+        function renderMainContent() {
+            const container = document.getElementById('content-area');
+            container.innerHTML = '';
+
+            // Handle Search or specific logic
+            let itemsToDisplay = [];
+            let sectionTitle = '';
+
+            if (searchQuery) {
+                const q = searchQuery.toLowerCase();
+                itemsToDisplay = [...apps, ...widgets].filter(i =>
+                    i.name.toLowerCase().includes(q) || i.description.toLowerCase().includes(q)
+                );
+                sectionTitle = `Search Results for "${searchQuery}"`;
+            } else if (viewMode === 'discover') {
+                // Hero
+                if (homeData.hero && homeData.hero.length > 0) {
+                    container.appendChild(renderHero(homeData.hero[0]));
+                }
+
+                // Featured Apps
+                const section1 = document.createElement('section');
+                section1.className = "mb-10";
+                section1.innerHTML = `
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Featured Apps</h2>
+                        <button onclick="setViewMode('apps')" class="text-blue-400 text-sm font-medium hover:text-blue-300 flex items-center transition-colors">
+                            See All <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </button>
+                    </div>
+                `;
+                const grid1 = document.createElement('div');
+                grid1.className = "grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-x-4 gap-y-8";
+
+                homeData.featuredApps.forEach(id => {
+                    const app = apps.find(a => a.id === id); // id is string in json, ensure match
+                    if (app) grid1.appendChild(renderAppCard(app));
+                });
+                section1.appendChild(grid1);
+                container.appendChild(section1);
+
+                // Featured Widgets
+                const section2 = document.createElement('section');
+                section2.innerHTML = `
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Must-have Widgets</h2>
+                        <button onclick="setViewMode('widgets')" class="text-blue-400 text-sm font-medium hover:text-blue-300 flex items-center transition-colors">
+                            See All <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </button>
+                    </div>
+                `;
+                const grid2 = document.createElement('div');
+                grid2.className = "grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-x-4 gap-y-8";
+
+                homeData.featuredWidgets.forEach(id => {
+                    const w = widgets.find(a => a.id === id);
+                    if (w) grid2.appendChild(renderAppCard(w));
+                });
+                section2.appendChild(grid2);
+                container.appendChild(section2);
+
+                lucide.createIcons();
+                return; // End discover view
+            } else {
+                // Filter items
+                const source = viewMode === 'apps' ? apps : widgets;
+                itemsToDisplay = activeCategory ? source.filter(i => i.category === activeCategory) : source;
+                sectionTitle = activeCategory || (viewMode === 'apps' ? 'All Apps' : 'All Widgets');
+            }
+
+            // Grid View
+            const header = document.createElement('div');
+            header.className = "mb-8";
+            header.innerHTML = `
+                <h1 class="text-3xl font-bold text-white mb-2">${sectionTitle}</h1>
+                <p class="text-gray-400">${itemsToDisplay.length} items</p>
+            `;
+            container.appendChild(header);
+
+            const grid = document.createElement('div');
+            grid.className = "grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-x-6 gap-y-10 pb-10";
+
+            if (itemsToDisplay.length === 0) {
+                grid.innerHTML = '<div class="col-span-full h-40 flex items-center justify-center text-gray-500">No items found</div>';
+            } else {
+                itemsToDisplay.forEach(item => {
+                    grid.appendChild(renderAppCard(item));
+                });
+            }
+            container.appendChild(grid);
+
+            lucide.createIcons();
+        }
+
+        // --- Detail Modal ---
+        function showDetail(item) {
+            const overlay = document.getElementById('modal-overlay');
+            const content = document.getElementById('modal-content');
+
+            const isUrlIcon = item.icon.includes('http') || item.icon.includes('data:');
+            const iconHtml = isUrlIcon
+                ? `<img src="${item.icon}" alt="${item.name}" class="w-full h-full object-cover">`
+                : `<div class="text-4xl text-gray-500 flex items-center justify-center w-full h-full"><i data-lucide="${item.icon}"></i></div>`;
+
+            content.innerHTML = `
+                 <div class="relative max-h-[85vh] overflow-y-auto custom-scrollbar bg-[#1c1c1e]">
+                    <!-- Header -->
+                    <div class="p-8 pb-6 flex items-start space-x-6 border-b border-white/5 bg-[#252528]">
+                         <div class="w-32 h-32 flex-shrink-0 rounded-[22%] overflow-hidden bg-[#2c2c2e] shadow-2xl border border-white/10 flex items-center justify-center">
+                            ${iconHtml}
+                        </div>
+                        <div class="flex-1 min-w-0 pt-2">
+                             <h2 class="text-3xl font-bold text-white mb-2">${item.name}</h2>
+                             <p class="text-blue-400 text-sm font-medium mb-4">${item.author || 'Unknown Author'}</p>
+                             <div class="flex items-center space-x-3">
+                                <button class="px-8 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold transition-colors shadow-lg shadow-blue-900/40">
+                                    Install
+                                </button>
+                                <button class="p-2 rounded-full hover:bg-white/10 text-gray-400 transition-colors">
+                                    <i data-lucide="share" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                         <button onclick="closeDetail()" class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white">
+                            <i data-lucide="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="p-8 space-y-8">
+                         <!-- Screenshots -->
+                         ${item.screenshots && item.screenshots.length > 0 ? `
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-bold text-white">Preview</h3>
+                                <div class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+                                    ${item.screenshots.map(src => `
+                                        <img src="${src}" class="h-64 w-auto rounded-xl shadow-lg border border-white/5 flex-shrink-0" />
+                                    `).join('')}
+                                </div>
+                            </div>
+                         ` : ''}
+                        
+                         <!-- Description -->
+                         <div>
+                            <h3 class="text-lg font-bold text-white mb-3">Description</h3>
+                            <p class="text-gray-300 leading-relaxed">${item.description}</p>
+                        </div>
+                        
+                         <!-- Info -->
+                         <div>
+                            <h3 class="text-lg font-bold text-white mb-3">Information</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="flex justify-between py-2 border-b border-white/5">
+                                    <span class="text-gray-500">Category</span>
+                                    <span class="text-gray-300">${item.category}</span>
+                                </div>
+                                <div class="flex justify-between py-2 border-b border-white/5">
+                                    <span class="text-gray-500">Version</span>
+                                    <span class="text-gray-300">${item.version || '1.0.0'}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            overlay.classList.remove('hidden');
+            // Trigger reflow for animation
+            void overlay.offsetWidth;
+            overlay.classList.remove('opacity-0');
+            content.classList.remove('scale-95', 'opacity-0'); // Scale up
+
+            // Re-run icons
+            lucide.createIcons();
+        }
+
+        function closeDetail() {
+            const overlay = document.getElementById('modal-overlay');
+            const content = document.getElementById('modal-content');
+            overlay.classList.add('opacity-0');
+            content.classList.add('scale-95');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        // --- Logic ---
+        function setViewMode(mode, category = null) {
+            viewMode = mode;
+            activeCategory = category;
+            renderSidebar();
+            renderMainContent();
+        }
+
+        // Search Input
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderSidebar(); // Update sidebar active states (clears them)
+            renderMainContent();
+        });
+
+        // Overlay Click Close
+        document.getElementById('modal-overlay').addEventListener('click', (e) => {
+            if (e.target.id === 'modal-overlay') closeDetail();
+        });
+
+        // Initialize logic to fetch real data from Remote Source
+        const REPO_BASE = 'https://moduqishi.github.io/GrassTab-Store/';
+
+        fetch(REPO_BASE + 'apps.json').then(r => r.json()).then(d => {
+            console.log('Loaded apps from Remote JSON');
+            apps = d;
+            renderSidebar();
+            renderMainContent();
+        }).catch(err => {
+            console.warn('Could not load remote apps.json, trying local or using mock data.', err);
+            // Fallback to local fetch if remote fails (e.g. offline)
+            fetch('apps.json').then(r => r.json()).then(d => {
+                apps = d;
+                renderSidebar();
+                renderMainContent();
+            }).catch(e => console.warn('Local apps.json failed too. Using mock data.'));
+        });
+
+        fetch(REPO_BASE + 'widgets.json').then(r => r.json()).then(d => {
+            widgets = d;
+            renderSidebar();
+            renderMainContent();
+        }).catch(err => {
+            fetch('widgets.json').then(r => r.json()).then(d => {
+                widgets = d;
+                renderSidebar();
+                renderMainContent();
+            });
+        });
+
+        fetch(REPO_BASE + 'home.json').then(r => r.json()).then(d => {
+            homeData = d;
+            renderMainContent();
+        }).catch(err => {
+            fetch('home.json').then(r => r.json()).then(d => {
+                homeData = d;
+                renderMainContent();
+            });
+        });
+
+        // Initial Render
+        renderSidebar();
+        renderMainContent();
+
+    </script>
+</body>
+
+</html>
