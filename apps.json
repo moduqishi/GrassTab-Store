@@ -4,6 +4,10 @@
         "name": "2048",
         "description": "经典的数字拼接游戏",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/1200px-2048_logo.svg.png",
+        "screenshots": [
+            "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=800&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&auto=format&fit=crop&q=60"
+        ],
         "version": "1.0.0",
         "author": "Gabriele Cirulli",
         "category": "Game",
@@ -23,6 +27,10 @@
         "name": "Excalidraw",
         "description": "手绘风格的虚拟白板协作工具",
         "icon": "https://excalidraw.com/apple-touch-icon.png",
+        "screenshots": [
+            "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&auto=format&fit=crop&q=60"
+        ],
         "version": "1.0.0",
         "author": "Excalidraw",
         "category": "Productivity",
@@ -42,6 +50,10 @@
         "name": "VS Code Web",
         "description": "运行在浏览器中的 VS Code",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+        "screenshots": [
+            "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60"
+        ],
         "version": "1.85.0",
         "author": "Microsoft",
         "category": "Development",
@@ -54,6 +66,3046 @@
             "color": "from-blue-500 to-blue-600",
             "iconType": "unavatar",
             "customIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+        }
+    },
+    {
+        "id": "com.web.1000",
+        "name": "Baidu",
+        "description": "百度一下，你就知道",
+        "icon": "https://unavatar.io/www.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Baidu",
+            "url": "https://www.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1001",
+        "name": "Bilibili",
+        "description": "国内知名的视频弹幕网站",
+        "icon": "https://unavatar.io/www.bilibili.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Bilibili",
+            "url": "https://www.bilibili.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.bilibili.com"
+        }
+    },
+    {
+        "id": "com.web.1002",
+        "name": "Weibo",
+        "description": "随时随地发现新鲜事",
+        "icon": "https://unavatar.io/weibo.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Weibo",
+            "url": "https://weibo.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/weibo.com"
+        }
+    },
+    {
+        "id": "com.web.1003",
+        "name": "Zhihu",
+        "description": "有问题，就会有答案",
+        "icon": "https://unavatar.io/www.zhihu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Zhihu",
+            "url": "https://www.zhihu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.zhihu.com"
+        }
+    },
+    {
+        "id": "com.web.1004",
+        "name": "Taobao",
+        "description": "亚洲较大的网上交易平台",
+        "icon": "https://unavatar.io/www.taobao.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Taobao",
+            "url": "https://www.taobao.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.taobao.com"
+        }
+    },
+    {
+        "id": "com.web.1005",
+        "name": "JD",
+        "description": "专业的综合网上购物商城",
+        "icon": "https://unavatar.io/www.jd.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "JD",
+            "url": "https://www.jd.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.jd.com"
+        }
+    },
+    {
+        "id": "com.web.1006",
+        "name": "Douyin",
+        "description": "记录美好生活",
+        "icon": "https://unavatar.io/www.douyin.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Douyin",
+            "url": "https://www.douyin.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.douyin.com"
+        }
+    },
+    {
+        "id": "com.web.1007",
+        "name": "Tmall",
+        "description": "理想生活上天猫",
+        "icon": "https://unavatar.io/www.tmall.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tmall",
+            "url": "https://www.tmall.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.tmall.com"
+        }
+    },
+    {
+        "id": "com.web.1008",
+        "name": "XiaoHongShu",
+        "description": "标记我的生活",
+        "icon": "https://unavatar.io/www.xiaohongshu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "XiaoHongShu",
+            "url": "https://www.xiaohongshu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.xiaohongshu.com"
+        }
+    },
+    {
+        "id": "com.web.1009",
+        "name": "Douban",
+        "description": "提供图书、电影、音乐唱片的推荐",
+        "icon": "https://unavatar.io/www.douban.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Douban",
+            "url": "https://www.douban.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.douban.com"
+        }
+    },
+    {
+        "id": "com.web.1010",
+        "name": "iQiyi",
+        "description": "悦享品质",
+        "icon": "https://unavatar.io/www.iqiyi.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "iQiyi",
+            "url": "https://www.iqiyi.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.iqiyi.com"
+        }
+    },
+    {
+        "id": "com.web.1011",
+        "name": "Youku",
+        "description": "这世界很酷",
+        "icon": "https://unavatar.io/www.youku.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Youku",
+            "url": "https://www.youku.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.youku.com"
+        }
+    },
+    {
+        "id": "com.web.1012",
+        "name": "Tencent Video",
+        "description": "腾讯视频",
+        "icon": "https://unavatar.io/v.qq.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tencent Video",
+            "url": "https://v.qq.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/v.qq.com"
+        }
+    },
+    {
+        "id": "com.web.1013",
+        "name": "Mango TV",
+        "description": "天生青春",
+        "icon": "https://unavatar.io/www.mgtv.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Mango TV",
+            "url": "https://www.mgtv.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.mgtv.com"
+        }
+    },
+    {
+        "id": "com.web.1014",
+        "name": "AcFun",
+        "description": "认真你就输了",
+        "icon": "https://unavatar.io/www.acfun.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "AcFun",
+            "url": "https://www.acfun.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.acfun.cn"
+        }
+    },
+    {
+        "id": "com.web.1015",
+        "name": "Huya",
+        "description": "技术驱动娱乐",
+        "icon": "https://unavatar.io/www.huya.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Huya",
+            "url": "https://www.huya.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.huya.com"
+        }
+    },
+    {
+        "id": "com.web.1016",
+        "name": "Douyu",
+        "description": "每个人的直播平台",
+        "icon": "https://unavatar.io/www.douyu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Douyu",
+            "url": "https://www.douyu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.douyu.com"
+        }
+    },
+    {
+        "id": "com.web.1017",
+        "name": "Tieba",
+        "description": "全球领先的中文社区",
+        "icon": "https://unavatar.io/tieba.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tieba",
+            "url": "https://tieba.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/tieba.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1018",
+        "name": "WeChat",
+        "description": "微信网页版",
+        "icon": "https://unavatar.io/weixin.qq.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "WeChat",
+            "url": "https://weixin.qq.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/weixin.qq.com"
+        }
+    },
+    {
+        "id": "com.web.1019",
+        "name": "QQ",
+        "description": "QQ PC版",
+        "icon": "https://unavatar.io/im.qq.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "QQ",
+            "url": "https://im.qq.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/im.qq.com"
+        }
+    },
+    {
+        "id": "com.web.1020",
+        "name": "Hupu",
+        "description": "体育虎扑",
+        "icon": "https://unavatar.io/www.hupu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Hupu",
+            "url": "https://www.hupu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.hupu.com"
+        }
+    },
+    {
+        "id": "com.web.1021",
+        "name": "NGA",
+        "description": "艾泽拉斯国家地理",
+        "icon": "https://unavatar.io/nga.178.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "NGA",
+            "url": "https://nga.178.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/nga.178.com"
+        }
+    },
+    {
+        "id": "com.web.1022",
+        "name": "V2EX",
+        "description": "创意工作者们的社区",
+        "icon": "https://unavatar.io/www.v2ex.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "V2EX",
+            "url": "https://www.v2ex.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.v2ex.com"
+        }
+    },
+    {
+        "id": "com.web.1023",
+        "name": "Jike",
+        "description": "即刻",
+        "icon": "https://unavatar.io/web.okjike.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Jike",
+            "url": "https://web.okjike.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/web.okjike.com"
+        }
+    },
+    {
+        "id": "com.web.1024",
+        "name": "Pinduoduo",
+        "description": "多实惠，多乐趣",
+        "icon": "https://unavatar.io/www.pinduoduo.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Pinduoduo",
+            "url": "https://www.pinduoduo.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.pinduoduo.com"
+        }
+    },
+    {
+        "id": "com.web.1025",
+        "name": "Vipshop",
+        "description": "唯品会",
+        "icon": "https://unavatar.io/www.vip.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Vipshop",
+            "url": "https://www.vip.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.vip.com"
+        }
+    },
+    {
+        "id": "com.web.1026",
+        "name": "Suning",
+        "description": "苏宁易购",
+        "icon": "https://unavatar.io/www.suning.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Suning",
+            "url": "https://www.suning.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.suning.com"
+        }
+    },
+    {
+        "id": "com.web.1027",
+        "name": "Xianyu",
+        "description": "闲鱼二手交易",
+        "icon": "https://unavatar.io/2.taobao.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Xianyu",
+            "url": "https://2.taobao.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/2.taobao.com"
+        }
+    },
+    {
+        "id": "com.web.1028",
+        "name": "Dangdang",
+        "description": "当当网",
+        "icon": "https://unavatar.io/www.dangdang.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Dangdang",
+            "url": "https://www.dangdang.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.dangdang.com"
+        }
+    },
+    {
+        "id": "com.web.1029",
+        "name": "Smzdm",
+        "description": "什么值得买",
+        "icon": "https://unavatar.io/www.smzdm.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Smzdm",
+            "url": "https://www.smzdm.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.smzdm.com"
+        }
+    },
+    {
+        "id": "com.web.1030",
+        "name": "Sina",
+        "description": "新浪网",
+        "icon": "https://unavatar.io/www.sina.com.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Sina",
+            "url": "https://www.sina.com.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.sina.com.cn"
+        }
+    },
+    {
+        "id": "com.web.1031",
+        "name": "Toutiao",
+        "description": "今日头条",
+        "icon": "https://unavatar.io/www.toutiao.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Toutiao",
+            "url": "https://www.toutiao.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.toutiao.com"
+        }
+    },
+    {
+        "id": "com.web.1032",
+        "name": "163",
+        "description": "网易",
+        "icon": "https://unavatar.io/www.163.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "163",
+            "url": "https://www.163.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.163.com"
+        }
+    },
+    {
+        "id": "com.web.1033",
+        "name": "Tencent News",
+        "description": "腾讯新闻",
+        "icon": "https://unavatar.io/news.qq.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tencent News",
+            "url": "https://news.qq.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/news.qq.com"
+        }
+    },
+    {
+        "id": "com.web.1034",
+        "name": "Sohu",
+        "description": "搜狐",
+        "icon": "https://unavatar.io/www.sohu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Sohu",
+            "url": "https://www.sohu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.sohu.com"
+        }
+    },
+    {
+        "id": "com.web.1035",
+        "name": "Phoenix",
+        "description": "凤凰网",
+        "icon": "https://unavatar.io/www.ifeng.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Phoenix",
+            "url": "https://www.ifeng.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.ifeng.com"
+        }
+    },
+    {
+        "id": "com.web.1036",
+        "name": "Huanqiu",
+        "description": "环球网",
+        "icon": "https://unavatar.io/www.huanqiu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Huanqiu",
+            "url": "https://www.huanqiu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.huanqiu.com"
+        }
+    },
+    {
+        "id": "com.web.1037",
+        "name": "ThePaper",
+        "description": "澎湃新闻",
+        "icon": "https://unavatar.io/www.thepaper.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "ThePaper",
+            "url": "https://www.thepaper.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.thepaper.cn"
+        }
+    },
+    {
+        "id": "com.web.1038",
+        "name": "36Kr",
+        "description": "让一部分人先看到未来",
+        "icon": "https://unavatar.io/www.36kr.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "36Kr",
+            "url": "https://www.36kr.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.36kr.com"
+        }
+    },
+    {
+        "id": "com.web.1039",
+        "name": "Huxiu",
+        "description": "虎嗅网",
+        "icon": "https://unavatar.io/www.huxiu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Huxiu",
+            "url": "https://www.huxiu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.huxiu.com"
+        }
+    },
+    {
+        "id": "com.web.1040",
+        "name": "CSDN",
+        "description": "专业开发者社区",
+        "icon": "https://unavatar.io/www.csdn.net",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "CSDN",
+            "url": "https://www.csdn.net",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.csdn.net"
+        }
+    },
+    {
+        "id": "com.web.1041",
+        "name": "Juejin",
+        "description": "掘金",
+        "icon": "https://unavatar.io/juejin.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Juejin",
+            "url": "https://juejin.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/juejin.cn"
+        }
+    },
+    {
+        "id": "com.web.1042",
+        "name": "Gitee",
+        "description": "码云",
+        "icon": "https://unavatar.io/gitee.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Gitee",
+            "url": "https://gitee.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/gitee.com"
+        }
+    },
+    {
+        "id": "com.web.1043",
+        "name": "SegmentFault",
+        "description": "思否",
+        "icon": "https://unavatar.io/segmentfault.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "SegmentFault",
+            "url": "https://segmentfault.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/segmentfault.com"
+        }
+    },
+    {
+        "id": "com.web.1044",
+        "name": "Oschina",
+        "description": "开源中国",
+        "icon": "https://unavatar.io/www.oschina.net",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Oschina",
+            "url": "https://www.oschina.net",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.oschina.net"
+        }
+    },
+    {
+        "id": "com.web.1045",
+        "name": "Runoob",
+        "description": "菜鸟教程",
+        "icon": "https://unavatar.io/www.runoob.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Runoob",
+            "url": "https://www.runoob.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.runoob.com"
+        }
+    },
+    {
+        "id": "com.web.1046",
+        "name": "InfoQ",
+        "description": "InfoQ",
+        "icon": "https://unavatar.io/www.infoq.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "InfoQ",
+            "url": "https://www.infoq.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.infoq.cn"
+        }
+    },
+    {
+        "id": "com.web.1047",
+        "name": "Aliyun",
+        "description": "阿里云",
+        "icon": "https://unavatar.io/www.aliyun.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Aliyun",
+            "url": "https://www.aliyun.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.aliyun.com"
+        }
+    },
+    {
+        "id": "com.web.1048",
+        "name": "Tencent Cloud",
+        "description": "腾讯云",
+        "icon": "https://unavatar.io/cloud.tencent.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tencent Cloud",
+            "url": "https://cloud.tencent.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/cloud.tencent.com"
+        }
+    },
+    {
+        "id": "com.web.1049",
+        "name": "Netease Cloud Music",
+        "description": "网易云音乐",
+        "icon": "https://unavatar.io/music.163.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Netease Cloud Music",
+            "url": "https://music.163.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/music.163.com"
+        }
+    },
+    {
+        "id": "com.web.1050",
+        "name": "QQ Music",
+        "description": "QQ音乐",
+        "icon": "https://unavatar.io/y.qq.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "QQ Music",
+            "url": "https://y.qq.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/y.qq.com"
+        }
+    },
+    {
+        "id": "com.web.1051",
+        "name": "Ximalaya",
+        "description": "喜马拉雅",
+        "icon": "https://unavatar.io/www.ximalaya.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Ximalaya",
+            "url": "https://www.ximalaya.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.ximalaya.com"
+        }
+    },
+    {
+        "id": "com.web.1052",
+        "name": "Gaode Map",
+        "description": "高德地图",
+        "icon": "https://unavatar.io/www.amap.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Gaode Map",
+            "url": "https://www.amap.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.amap.com"
+        }
+    },
+    {
+        "id": "com.web.1053",
+        "name": "Baidu Map",
+        "description": "百度地图",
+        "icon": "https://unavatar.io/map.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Baidu Map",
+            "url": "https://map.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/map.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1054",
+        "name": "Baidu Translate",
+        "description": "百度翻译",
+        "icon": "https://unavatar.io/fanyi.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Baidu Translate",
+            "url": "https://fanyi.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/fanyi.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1055",
+        "name": "WPS",
+        "description": "WPS Office",
+        "icon": "https://unavatar.io/www.wps.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "WPS",
+            "url": "https://www.wps.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.wps.cn"
+        }
+    },
+    {
+        "id": "com.web.1056",
+        "name": "ProcessOn",
+        "description": "在线作图",
+        "icon": "https://unavatar.io/www.processon.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "ProcessOn",
+            "url": "https://www.processon.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.processon.com"
+        }
+    },
+    {
+        "id": "com.web.1057",
+        "name": "Lanhu",
+        "description": "蓝湖",
+        "icon": "https://unavatar.io/lanhuapp.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Lanhu",
+            "url": "https://lanhuapp.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/lanhuapp.com"
+        }
+    },
+    {
+        "id": "com.web.1058",
+        "name": "MasterGo",
+        "description": "MasterGo",
+        "icon": "https://unavatar.io/mastergo.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "MasterGo",
+            "url": "https://mastergo.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/mastergo.com"
+        }
+    },
+    {
+        "id": "com.web.1059",
+        "name": "Figma CN",
+        "description": "Figma",
+        "icon": "https://unavatar.io/www.figma.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Figma CN",
+            "url": "https://www.figma.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.figma.com"
+        }
+    },
+    {
+        "id": "com.web.1060",
+        "name": "Canva CN",
+        "description": "可画",
+        "icon": "https://unavatar.io/www.canva.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Canva CN",
+            "url": "https://www.canva.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.canva.cn"
+        }
+    },
+    {
+        "id": "com.web.1061",
+        "name": "Baike",
+        "description": "百度百科",
+        "icon": "https://unavatar.io/baike.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Baike",
+            "url": "https://baike.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/baike.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1062",
+        "name": "Douban Movie",
+        "description": "豆瓣电影",
+        "icon": "https://unavatar.io/movie.douban.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Douban Movie",
+            "url": "https://movie.douban.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/movie.douban.com"
+        }
+    },
+    {
+        "id": "com.web.1063",
+        "name": "Guokr",
+        "description": "果壳",
+        "icon": "https://unavatar.io/www.guokr.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Guokr",
+            "url": "https://www.guokr.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.guokr.com"
+        }
+    },
+    {
+        "id": "com.web.1064",
+        "name": "Kimi",
+        "description": "Kimi 智能助手",
+        "icon": "https://unavatar.io/kimi.moonshot.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Kimi",
+            "url": "https://kimi.moonshot.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/kimi.moonshot.cn"
+        }
+    },
+    {
+        "id": "com.web.1065",
+        "name": "Tongyi",
+        "description": "通义千问",
+        "icon": "https://unavatar.io/tongyi.aliyun.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tongyi",
+            "url": "https://tongyi.aliyun.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/tongyi.aliyun.com"
+        }
+    },
+    {
+        "id": "com.web.1066",
+        "name": "Wenxin",
+        "description": "文心一言",
+        "icon": "https://unavatar.io/yiyan.baidu.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Wenxin",
+            "url": "https://yiyan.baidu.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/yiyan.baidu.com"
+        }
+    },
+    {
+        "id": "com.web.1067",
+        "name": "Doubao",
+        "description": "豆包",
+        "icon": "https://unavatar.io/www.doubao.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Doubao",
+            "url": "https://www.doubao.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.doubao.com"
+        }
+    },
+    {
+        "id": "com.web.1068",
+        "name": "NPM",
+        "description": "Node Package Manager",
+        "icon": "https://unavatar.io/www.npmjs.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "NPM",
+            "url": "https://www.npmjs.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.npmjs.com"
+        }
+    },
+    {
+        "id": "com.web.1069",
+        "name": "MDN",
+        "description": "Web Docs",
+        "icon": "https://unavatar.io/developer.mozilla.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "MDN",
+            "url": "https://developer.mozilla.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/developer.mozilla.org"
+        }
+    },
+    {
+        "id": "com.web.1070",
+        "name": "React",
+        "description": "React Documentation",
+        "icon": "https://unavatar.io/react.dev",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "React",
+            "url": "https://react.dev",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/react.dev"
+        }
+    },
+    {
+        "id": "com.web.1071",
+        "name": "Vue",
+        "description": "Vue Documentation",
+        "icon": "https://unavatar.io/vuejs.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Vue",
+            "url": "https://vuejs.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/vuejs.org"
+        }
+    },
+    {
+        "id": "com.web.1072",
+        "name": "Angular",
+        "description": "Angular Documentation",
+        "icon": "https://unavatar.io/angular.io",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Angular",
+            "url": "https://angular.io",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/angular.io"
+        }
+    },
+    {
+        "id": "com.web.1073",
+        "name": "Tailwind",
+        "description": "CSS Framework",
+        "icon": "https://unavatar.io/tailwindcss.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Tailwind",
+            "url": "https://tailwindcss.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/tailwindcss.com"
+        }
+    },
+    {
+        "id": "com.web.1074",
+        "name": "Bootstrap",
+        "description": "CSS Framework",
+        "icon": "https://unavatar.io/getbootstrap.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Bootstrap",
+            "url": "https://getbootstrap.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/getbootstrap.com"
+        }
+    },
+    {
+        "id": "com.web.1075",
+        "name": "Python",
+        "description": "Python Language",
+        "icon": "https://unavatar.io/www.python.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Python",
+            "url": "https://www.python.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.python.org"
+        }
+    },
+    {
+        "id": "com.web.1076",
+        "name": "Golang",
+        "description": "Go Language",
+        "icon": "https://unavatar.io/go.dev",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Golang",
+            "url": "https://go.dev",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/go.dev"
+        }
+    },
+    {
+        "id": "com.web.1077",
+        "name": "Rust",
+        "description": "Rust Language",
+        "icon": "https://unavatar.io/www.rust-lang.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Rust",
+            "url": "https://www.rust-lang.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.rust-lang.org"
+        }
+    },
+    {
+        "id": "com.web.1078",
+        "name": "Docker",
+        "description": "Container Platform",
+        "icon": "https://unavatar.io/www.docker.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Docker",
+            "url": "https://www.docker.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.docker.com"
+        }
+    },
+    {
+        "id": "com.web.1079",
+        "name": "Kubernetes",
+        "description": "Container Orchestration",
+        "icon": "https://unavatar.io/kubernetes.io",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Kubernetes",
+            "url": "https://kubernetes.io",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/kubernetes.io"
+        }
+    },
+    {
+        "id": "com.web.1080",
+        "name": "LeetCode CN",
+        "description": "力扣",
+        "icon": "https://unavatar.io/leetcode.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "LeetCode CN",
+            "url": "https://leetcode.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/leetcode.cn"
+        }
+    },
+    {
+        "id": "com.web.1081",
+        "name": "StackOverflow",
+        "description": "Developer Community",
+        "icon": "https://unavatar.io/stackoverflow.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "StackOverflow",
+            "url": "https://stackoverflow.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/stackoverflow.com"
+        }
+    },
+    {
+        "id": "com.web.1082",
+        "name": "GitHub",
+        "description": "Where the world builds software",
+        "icon": "https://unavatar.io/github.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "GitHub",
+            "url": "https://github.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/github.com"
+        }
+    },
+    {
+        "id": "com.web.1083",
+        "name": "GitLab",
+        "description": "DevOps Platform",
+        "icon": "https://unavatar.io/gitlab.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "GitLab",
+            "url": "https://gitlab.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/gitlab.com"
+        }
+    },
+    {
+        "id": "com.web.1084",
+        "name": "Vercel",
+        "description": "Frontend Cloud",
+        "icon": "https://unavatar.io/vercel.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Vercel",
+            "url": "https://vercel.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/vercel.com"
+        }
+    },
+    {
+        "id": "com.web.1085",
+        "name": "Netlify",
+        "description": "Web Platform",
+        "icon": "https://unavatar.io/www.netlify.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Netlify",
+            "url": "https://www.netlify.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.netlify.com"
+        }
+    },
+    {
+        "id": "com.web.1086",
+        "name": "Supabase",
+        "description": "Firebase Alternative",
+        "icon": "https://unavatar.io/supabase.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Supabase",
+            "url": "https://supabase.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/supabase.com"
+        }
+    },
+    {
+        "id": "com.web.1087",
+        "name": "Firebase",
+        "description": "App Development Platform",
+        "icon": "https://unavatar.io/firebase.google.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Firebase",
+            "url": "https://firebase.google.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/firebase.google.com"
+        }
+    },
+    {
+        "id": "com.web.1088",
+        "name": "Mongodb",
+        "description": "NoSQL Database",
+        "icon": "https://unavatar.io/www.mongodb.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Mongodb",
+            "url": "https://www.mongodb.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.mongodb.com"
+        }
+    },
+    {
+        "id": "com.web.1089",
+        "name": "Redis",
+        "description": "In-memory Data Store",
+        "icon": "https://unavatar.io/redis.io",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Redis",
+            "url": "https://redis.io",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/redis.io"
+        }
+    },
+    {
+        "id": "com.web.1090",
+        "name": "PostgreSQL",
+        "description": "Relational Database",
+        "icon": "https://unavatar.io/www.postgresql.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "PostgreSQL",
+            "url": "https://www.postgresql.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.postgresql.org"
+        }
+    },
+    {
+        "id": "com.web.1091",
+        "name": "MySQL",
+        "description": "Relational Database",
+        "icon": "https://unavatar.io/www.mysql.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "MySQL",
+            "url": "https://www.mysql.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.mysql.com"
+        }
+    },
+    {
+        "id": "com.web.1092",
+        "name": "Nginx",
+        "description": "Web Server",
+        "icon": "https://unavatar.io/nginx.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Nginx",
+            "url": "https://nginx.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/nginx.org"
+        }
+    },
+    {
+        "id": "com.web.1093",
+        "name": "Apache",
+        "description": "Web Server",
+        "icon": "https://unavatar.io/httpd.apache.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Apache",
+            "url": "https://httpd.apache.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/httpd.apache.org"
+        }
+    },
+    {
+        "id": "com.web.1094",
+        "name": "Adobe Color",
+        "description": "Color Wheel",
+        "icon": "https://unavatar.io/color.adobe.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Adobe Color",
+            "url": "https://color.adobe.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/color.adobe.com"
+        }
+    },
+    {
+        "id": "com.web.1095",
+        "name": "Dribbble",
+        "description": "Design Inspiration",
+        "icon": "https://unavatar.io/dribbble.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Dribbble",
+            "url": "https://dribbble.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/dribbble.com"
+        }
+    },
+    {
+        "id": "com.web.1096",
+        "name": "Behance",
+        "description": "Portfolio Showcase",
+        "icon": "https://unavatar.io/www.behance.net",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Behance",
+            "url": "https://www.behance.net",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.behance.net"
+        }
+    },
+    {
+        "id": "com.web.1097",
+        "name": "Pinterest",
+        "description": "Visual Discovery",
+        "icon": "https://unavatar.io/www.pinterest.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Pinterest",
+            "url": "https://www.pinterest.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.pinterest.com"
+        }
+    },
+    {
+        "id": "com.web.1098",
+        "name": "Unsplash",
+        "description": "Free Images",
+        "icon": "https://unavatar.io/unsplash.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Unsplash",
+            "url": "https://unsplash.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/unsplash.com"
+        }
+    },
+    {
+        "id": "com.web.1099",
+        "name": "Pexels",
+        "description": "Free Stock Photos",
+        "icon": "https://unavatar.io/www.pexels.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Pexels",
+            "url": "https://www.pexels.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.pexels.com"
+        }
+    },
+    {
+        "id": "com.web.1100",
+        "name": "Pixabay",
+        "description": "Free Images",
+        "icon": "https://unavatar.io/pixabay.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Pixabay",
+            "url": "https://pixabay.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/pixabay.com"
+        }
+    },
+    {
+        "id": "com.web.1101",
+        "name": "IconFont",
+        "description": "阿里巴巴矢量图标库",
+        "icon": "https://unavatar.io/www.iconfont.cn",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "IconFont",
+            "url": "https://www.iconfont.cn",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.iconfont.cn"
+        }
+    },
+    {
+        "id": "com.web.1102",
+        "name": "FontAwesome",
+        "description": "Icon Set",
+        "icon": "https://unavatar.io/fontawesome.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "FontAwesome",
+            "url": "https://fontawesome.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/fontawesome.com"
+        }
+    },
+    {
+        "id": "com.web.1103",
+        "name": "Google Fonts",
+        "description": "Free Fonts",
+        "icon": "https://unavatar.io/fonts.google.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Google Fonts",
+            "url": "https://fonts.google.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/fonts.google.com"
+        }
+    },
+    {
+        "id": "com.web.1104",
+        "name": "Material Design",
+        "description": "Design System",
+        "icon": "https://unavatar.io/m3.material.io",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Material Design",
+            "url": "https://m3.material.io",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/m3.material.io"
+        }
+    },
+    {
+        "id": "com.web.1105",
+        "name": "Apple Human Interface",
+        "description": "Apple Design",
+        "icon": "https://unavatar.io/developer.apple.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Apple Human Interface",
+            "url": "https://developer.apple.com/design",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/developer.apple.com"
+        }
+    },
+    {
+        "id": "com.web.1106",
+        "name": "Google",
+        "description": "Google Search",
+        "icon": "https://unavatar.io/www.google.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Google",
+            "url": "https://www.google.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.google.com"
+        }
+    },
+    {
+        "id": "com.web.1107",
+        "name": "Bing",
+        "description": "Microsoft Bing",
+        "icon": "https://unavatar.io/www.bing.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Bing",
+            "url": "https://www.bing.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.bing.com"
+        }
+    },
+    {
+        "id": "com.web.1108",
+        "name": "DuckDuckGo",
+        "description": "Privacy Search",
+        "icon": "https://unavatar.io/duckduckgo.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "DuckDuckGo",
+            "url": "https://duckduckgo.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/duckduckgo.com"
+        }
+    },
+    {
+        "id": "com.web.1109",
+        "name": "Yahoo",
+        "description": "Yahoo Portal",
+        "icon": "https://unavatar.io/www.yahoo.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Yahoo",
+            "url": "https://www.yahoo.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.yahoo.com"
+        }
+    },
+    {
+        "id": "com.web.1110",
+        "name": "MSN",
+        "description": "MSN Portal",
+        "icon": "https://unavatar.io/www.msn.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "MSN",
+            "url": "https://www.msn.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.msn.com"
+        }
+    },
+    {
+        "id": "com.web.1111",
+        "name": "Weather",
+        "description": "Weather Forecast",
+        "icon": "https://unavatar.io/weather.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Weather",
+            "url": "https://weather.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/weather.com"
+        }
+    },
+    {
+        "id": "com.web.1112",
+        "name": "SpeedTest",
+        "description": "Internet Speed Test",
+        "icon": "https://unavatar.io/www.speedtest.net",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "SpeedTest",
+            "url": "https://www.speedtest.net",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.speedtest.net"
+        }
+    },
+    {
+        "id": "com.web.1113",
+        "name": "Fast",
+        "description": "Speed Test by Netflix",
+        "icon": "https://unavatar.io/fast.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Fast",
+            "url": "https://fast.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/fast.com"
+        }
+    },
+    {
+        "id": "com.web.1114",
+        "name": "Zoom",
+        "description": "Video Conferencing",
+        "icon": "https://unavatar.io/zoom.us",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Zoom",
+            "url": "https://zoom.us",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/zoom.us"
+        }
+    },
+    {
+        "id": "com.web.1115",
+        "name": "Slack",
+        "description": "Team Communication",
+        "icon": "https://unavatar.io/slack.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Slack",
+            "url": "https://slack.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/slack.com"
+        }
+    },
+    {
+        "id": "com.web.1116",
+        "name": "Discord",
+        "description": "Chat for Communities",
+        "icon": "https://unavatar.io/discord.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Discord",
+            "url": "https://discord.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/discord.com"
+        }
+    },
+    {
+        "id": "com.web.1117",
+        "name": "Telegram",
+        "description": "Messaging App",
+        "icon": "https://unavatar.io/web.telegram.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Telegram",
+            "url": "https://web.telegram.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/web.telegram.org"
+        }
+    },
+    {
+        "id": "com.web.1118",
+        "name": "WhatsApp",
+        "description": "Messaging App",
+        "icon": "https://unavatar.io/web.whatsapp.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "WhatsApp",
+            "url": "https://web.whatsapp.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/web.whatsapp.com"
+        }
+    },
+    {
+        "id": "com.web.1119",
+        "name": "Twitter",
+        "description": "X / Twitter",
+        "icon": "https://unavatar.io/twitter.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Twitter",
+            "url": "https://twitter.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/twitter.com"
+        }
+    },
+    {
+        "id": "com.web.1120",
+        "name": "Facebook",
+        "description": "Social Network",
+        "icon": "https://unavatar.io/www.facebook.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Facebook",
+            "url": "https://www.facebook.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.facebook.com"
+        }
+    },
+    {
+        "id": "com.web.1121",
+        "name": "Instagram",
+        "description": "Photo Sharing",
+        "icon": "https://unavatar.io/www.instagram.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Instagram",
+            "url": "https://www.instagram.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.instagram.com"
+        }
+    },
+    {
+        "id": "com.web.1122",
+        "name": "LinkedIn",
+        "description": "Professional Network",
+        "icon": "https://unavatar.io/www.linkedin.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "LinkedIn",
+            "url": "https://www.linkedin.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.linkedin.com"
+        }
+    },
+    {
+        "id": "com.web.1123",
+        "name": "Reddit",
+        "description": "Front Page of the Internet",
+        "icon": "https://unavatar.io/www.reddit.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Reddit",
+            "url": "https://www.reddit.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.reddit.com"
+        }
+    },
+    {
+        "id": "com.web.1124",
+        "name": "Twitch",
+        "description": "Live Streaming",
+        "icon": "https://unavatar.io/www.twitch.tv",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Twitch",
+            "url": "https://www.twitch.tv",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.twitch.tv"
+        }
+    },
+    {
+        "id": "com.web.1125",
+        "name": "Netflix",
+        "description": "Streaming Service",
+        "icon": "https://unavatar.io/www.netflix.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Netflix",
+            "url": "https://www.netflix.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.netflix.com"
+        }
+    },
+    {
+        "id": "com.web.1126",
+        "name": "Spotify",
+        "description": "Music Streaming",
+        "icon": "https://unavatar.io/open.spotify.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Spotify",
+            "url": "https://open.spotify.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/open.spotify.com"
+        }
+    },
+    {
+        "id": "com.web.1127",
+        "name": "YouTube",
+        "description": "Video Sharing",
+        "icon": "https://unavatar.io/www.youtube.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Video",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "YouTube",
+            "url": "https://www.youtube.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.youtube.com"
+        }
+    },
+    {
+        "id": "com.web.1128",
+        "name": "Amazon",
+        "description": "Online Shopping",
+        "icon": "https://unavatar.io/www.amazon.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Amazon",
+            "url": "https://www.amazon.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.amazon.com"
+        }
+    },
+    {
+        "id": "com.web.1129",
+        "name": "eBay",
+        "description": "Auction & Shopping",
+        "icon": "https://unavatar.io/www.ebay.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "eBay",
+            "url": "https://www.ebay.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.ebay.com"
+        }
+    },
+    {
+        "id": "com.web.1130",
+        "name": "AliExpress",
+        "description": "Global Shopping",
+        "icon": "https://unavatar.io/www.aliexpress.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Shopping",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "AliExpress",
+            "url": "https://www.aliexpress.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.aliexpress.com"
+        }
+    },
+    {
+        "id": "com.web.1131",
+        "name": "Wikipedia",
+        "description": "Free Encyclopedia",
+        "icon": "https://unavatar.io/www.wikipedia.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Tool",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Wikipedia",
+            "url": "https://www.wikipedia.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.wikipedia.org"
+        }
+    },
+    {
+        "id": "com.web.1132",
+        "name": "Quora",
+        "description": "Q&A Platform",
+        "icon": "https://unavatar.io/www.quora.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Social",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Quora",
+            "url": "https://www.quora.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.quora.com"
+        }
+    },
+    {
+        "id": "com.web.1133",
+        "name": "Medium",
+        "description": "Publishing Platform",
+        "icon": "https://unavatar.io/medium.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "News",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Medium",
+            "url": "https://medium.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/medium.com"
+        }
+    },
+    {
+        "id": "com.web.1134",
+        "name": "Substack",
+        "description": "Newsletter Platform",
+        "icon": "https://unavatar.io/substack.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Impulse",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Substack",
+            "url": "https://substack.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/substack.com"
+        }
+    },
+    {
+        "id": "com.web.1135",
+        "name": "Notion",
+        "description": "All-in-one Workspace",
+        "icon": "https://unavatar.io/www.notion.so",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Notion",
+            "url": "https://www.notion.so",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.notion.so"
+        }
+    },
+    {
+        "id": "com.web.1136",
+        "name": "Trello",
+        "description": "Project Management",
+        "icon": "https://unavatar.io/trello.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Trello",
+            "url": "https://trello.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/trello.com"
+        }
+    },
+    {
+        "id": "com.web.1137",
+        "name": "Asana",
+        "description": "Team Tracking",
+        "icon": "https://unavatar.io/asana.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Asana",
+            "url": "https://asana.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/asana.com"
+        }
+    },
+    {
+        "id": "com.web.1138",
+        "name": "Monday",
+        "description": "Work OS",
+        "icon": "https://unavatar.io/monday.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Monday",
+            "url": "https://monday.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/monday.com"
+        }
+    },
+    {
+        "id": "com.web.1139",
+        "name": "ClickUp",
+        "description": "Productivity Platform",
+        "icon": "https://unavatar.io/clickup.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "ClickUp",
+            "url": "https://clickup.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/clickup.com"
+        }
+    },
+    {
+        "id": "com.web.1140",
+        "name": "Linear",
+        "description": "Issue Tracking",
+        "icon": "https://unavatar.io/linear.app",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Linear",
+            "url": "https://linear.app",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/linear.app"
+        }
+    },
+    {
+        "id": "com.web.1141",
+        "name": "Jira",
+        "description": "Issue Tracking",
+        "icon": "https://unavatar.io/www.atlassian.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Productivity",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Jira",
+            "url": "https://www.atlassian.com/software/jira",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.atlassian.com"
+        }
+    },
+    {
+        "id": "com.web.1142",
+        "name": "Steam",
+        "description": "Game Distribution",
+        "icon": "https://unavatar.io/store.steampowered.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Steam",
+            "url": "https://store.steampowered.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/store.steampowered.com"
+        }
+    },
+    {
+        "id": "com.web.1143",
+        "name": "Epic Games",
+        "description": "Game Store",
+        "icon": "https://unavatar.io/store.epicgames.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Epic Games",
+            "url": "https://store.epicgames.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/store.epicgames.com"
+        }
+    },
+    {
+        "id": "com.web.1144",
+        "name": "GOG",
+        "description": "DRM-free Games",
+        "icon": "https://unavatar.io/www.gog.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "GOG",
+            "url": "https://www.gog.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.gog.com"
+        }
+    },
+    {
+        "id": "com.web.1145",
+        "name": "Itch.io",
+        "description": "Indie Games",
+        "icon": "https://unavatar.io/itch.io",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Itch.io",
+            "url": "https://itch.io",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/itch.io"
+        }
+    },
+    {
+        "id": "com.web.1146",
+        "name": "Roblox",
+        "description": "Game Platform",
+        "icon": "https://unavatar.io/www.roblox.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Roblox",
+            "url": "https://www.roblox.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.roblox.com"
+        }
+    },
+    {
+        "id": "com.web.1147",
+        "name": "Minecraft",
+        "description": "Sandbox Game",
+        "icon": "https://unavatar.io/www.minecraft.net",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Game",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Minecraft",
+            "url": "https://www.minecraft.net",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.minecraft.net"
+        }
+    },
+    {
+        "id": "com.web.1148",
+        "name": "Unity",
+        "description": "Game Engine",
+        "icon": "https://unavatar.io/unity.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Unity",
+            "url": "https://unity.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/unity.com"
+        }
+    },
+    {
+        "id": "com.web.1149",
+        "name": "Unreal Engine",
+        "description": "Game Engine",
+        "icon": "https://unavatar.io/www.unrealengine.com",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Unreal Engine",
+            "url": "https://www.unrealengine.com",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.unrealengine.com"
+        }
+    },
+    {
+        "id": "com.web.1150",
+        "name": "Godot",
+        "description": "Game Engine",
+        "icon": "https://unavatar.io/godotengine.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Development",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Godot",
+            "url": "https://godotengine.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/godotengine.org"
+        }
+    },
+    {
+        "id": "com.web.1151",
+        "name": "Blender",
+        "description": "3D Creation Suite",
+        "icon": "https://unavatar.io/www.blender.org",
+        "screenshots": [],
+        "version": "1.0.0",
+        "author": "Web",
+        "category": "Design",
+        "isWindowApp": false,
+        "shortcut": {
+            "title": "Blender",
+            "url": "https://www.blender.org",
+            "type": "custom",
+            "isApp": true,
+            "color": "from-gray-500 to-gray-600",
+            "iconType": "unavatar",
+            "customIcon": "https://unavatar.io/www.blender.org"
         }
     }
 ]
