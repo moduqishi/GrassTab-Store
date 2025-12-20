@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>专注番茄钟</title>
+    <title>专注</title>
     <style>
         :root {
-            --primary: #FF5252;
-            --bg: #ffffff;
-            --text: #333333;
-            --surface: #f5f5f5;
-            --overlay-bg: rgba(255, 255, 255, 0.95);
+            /* Apple Watch Activity Ring Red */
+            --primary: #fa114f;
+            --track: rgba(250, 17, 79, 0.15);
+            --bg: rgba(255, 255, 255, 0.0);
+            /* Transparent by default, let Blur show */
+            --text: #000000;
+            --btn-bg: rgba(255, 255, 255, 0.2);
+            --btn-active: rgba(255, 255, 255, 0.4);
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --primary: #FF5252;
-                --bg: #1a1a1a;
+                --primary: #fa114f;
+                --track: rgba(250, 17, 79, 0.2);
+                --bg: rgba(0, 0, 0, 0.0);
                 --text: #ffffff;
-                --surface: #333333;
-                --overlay-bg: rgba(26, 26, 26, 0.95);
+                --btn-bg: rgba(255, 255, 255, 0.1);
+                --btn-active: rgba(255, 255, 255, 0.2);
             }
         }
 
@@ -37,7 +41,7 @@
             overflow: hidden;
             background: var(--bg);
             color: var(--text);
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: -apple-system, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
             display: flex;
             user-select: none;
             cursor: default;
@@ -53,479 +57,456 @@
             position: relative;
         }
 
-        /* --- Main Timer Interface --- */
-        .ring-container {
+        /* --- Huge Ring & Typography --- */
+        .ring-wrapper {
             position: relative;
+            /* Almost full width in 1x1 */
+            width: 90vmin;
+            height: 90vmin;
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Adaptive size base */
-            width: 70vmin;
-            height: 70vmin;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         svg {
-            transform: rotate(-90deg);
-            width: 100%;
-            height: 100%;
-        }
-
-        circle {
-            transition: stroke-dashoffset 0.5s ease-in-out;
-            fill: none;
-            stroke-width: 6;
-            stroke-linecap: round;
-        }
-
-        .bg-ring {
-            stroke: var(--surface);
-        }
-
-        .progress-ring {
-            stroke: var(--primary);
-        }
-
-        .timer-text {
-            position: absolute;
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
-            font-size: 16vmin;
-            z-index: 1;
-        }
-
-        /* Controls Panel */
-        .controls {
-            position: absolute;
-            bottom: 10%;
-            display: flex;
-            gap: 4vmin;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.2s ease;
-            z-index: 2;
-        }
-
-        /* Always show controls if paused, or on hover */
-        #app:hover .controls,
-        #app.paused .controls {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* In layout-large (2x2), controls are static below ring */
-        body.layout-large .controls {
-            position: static;
-            margin-top: 4vmin;
-            opacity: 1;
-            transform: none;
-        }
-
-        .btn {
-            background: var(--surface);
-            color: var(--text);
-            border: none;
-            border-radius: 50%;
-            width: 12vmin;
-            height: 12vmin;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 6vmin;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn:active {
-            transform: scale(0.95);
-        }
-
-        .btn.primary {
-            background: var(--primary);
-            color: white;
-        }
-
-        .btn.icon-only {
-            font-family: sans-serif;
-        }
-
-        /* Settings Toggle Button (Top Right corner) */
-        .settings-btn {
-            position: absolute;
-            top: 2vmin;
-            right: 2vmin;
-            background: transparent;
-            border: none;
-            color: var(--text);
-            opacity: 0.3;
-            cursor: pointer;
-            padding: 2vmin;
-            z-index: 5;
-            font-size: 5vmin;
-        }
-
-        .settings-btn:hover {
-            opacity: 1;
-        }
-
-        /* Settings Overlay */
-        .settings-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--overlay-bg);
+            overflow: visible;
+            transform: rotate(-90deg);
+        }
+
+        circle {
+            fill: none;
+            stroke-linecap: round;
+        }
+
+        .track {
+            stroke: var(--track);
+            stroke-width: 12;
+            /* Bolder */
+        }
+
+        .progress {
+            stroke: var(--primary);
+            stroke-width: 12;
+            /* Bolder */
+            transition: stroke-dashoffset 0.5s ease-out;
+            filter: drop-shadow(0 0 2px rgba(250, 17, 79, 0.5));
+            /* Neon glow feel */
+        }
+
+        .timer-val {
+            z-index: 2;
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            /* Bold SF Pro */
+            letter-spacing: -0.03em;
+            font-size: 26vmin;
+            /* Massive font */
+            line-height: 1;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Controls (Invisible but clickable zones or Overlay) --- */
+
+        /* We use a glass pill for controls that appears on the bottom */
+        .control-pill {
+            position: absolute;
+            bottom: 5vmin;
+            background: rgba(120, 120, 128, 0.16);
+            /* iOS System Fill */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 99px;
+            padding: 1vmin 2vmin;
+            display: flex;
+            gap: 4vmin;
+            align-items: center;
+            opacity: 0;
+            transform: scale(0.9) translateY(10px);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             z-index: 10;
+        }
+
+        /* Show on hover or when paused (so user knows how to resume) */
+        #app:hover .control-pill,
+        #app.paused .control-pill {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        .icon-btn {
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 6vmin;
+            width: 10vmin;
+            height: 10vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .icon-btn:active {
+            background: rgba(128, 128, 128, 0.2);
+        }
+
+        /* Settings Gear: Top Right, Subtle */
+        .gear-btn {
+            position: absolute;
+            top: 3vmin;
+            right: 3vmin;
+            opacity: 0;
+            transition: opacity 0.3s;
+            cursor: pointer;
+            width: 8vmin;
+            height: 8vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5vmin;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            z-index: 20;
+        }
+
+        #app:hover .gear-btn {
+            opacity: 0.6;
+        }
+
+        .gear-btn:hover {
+            opacity: 1 !important;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Settings Overlay (iOS Sheet Style) --- */
+        .sheet-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 50;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 0.2s;
-            backdrop-filter: blur(5px);
+            transition: opacity 0.25s ease;
+            backdrop-filter: blur(10px);
         }
 
-        .settings-overlay.active {
+        @media (prefers-color-scheme: dark) {
+            .sheet-overlay {
+                background: rgba(20, 20, 20, 0.9);
+            }
+        }
+
+        .sheet-overlay.active {
             opacity: 1;
             pointer-events: auto;
         }
 
-        .settings-title {
-            font-size: 4vmin;
-            margin-bottom: 4vmin;
-            font-weight: bold;
+        .sheet-title {
+            font-size: 5vmin;
+            font-weight: 600;
+            margin-bottom: 6vmin;
         }
 
-        .time-presets {
+        .time-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2vmin;
-            width: 80%;
-            margin-bottom: 4vmin;
+            gap: 3vmin;
+            width: 85%;
+            margin-bottom: 6vmin;
         }
 
-        .preset-btn {
-            padding: 2vmin;
-            background: var(--surface);
-            border: 1px solid transparent;
-            border-radius: 8px;
-            color: var(--text);
-            font-size: 4vmin;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .preset-btn.active {
-            border-color: var(--primary);
-            color: var(--primary);
-            font-weight: bold;
-        }
-
-        .input-group {
-            display: flex;
-            align-items: center;
-            gap: 2vmin;
-            margin-bottom: 4vmin;
-        }
-
-        .custom-input {
-            width: 20vmin;
-            padding: 2vmin;
-            border: 1px solid var(--surface);
-            border-radius: 8px;
+        .time-opt {
             background: rgba(128, 128, 128, 0.1);
-            color: var(--text);
-            text-align: center;
+            border: none;
+            padding: 3vmin 0;
+            border-radius: 12px;
             font-size: 5vmin;
+            color: var(--text);
+            font-weight: 500;
+            cursor: pointer;
         }
 
-        /* Stats (Only visible in large layout) */
-        .stats {
-            margin-top: 2vmin;
-            font-size: 3vmin;
-            opacity: 0.7;
-            display: none;
+        .time-opt.active {
+            background: var(--primary);
+            color: white;
         }
 
-        /* 2x1 Layout Tweaks */
-        @media (aspect-ratio: 2/1) {
-            #app {
-                flex-direction: row;
-                gap: 4vmin;
-                justify-content: space-evenly;
-            }
-
-            .ring-container {
-                width: 40vmin;
-                height: 40vmin;
-                margin: 0;
-            }
-
-            .timer-text {
-                font-size: 10vmin;
-            }
-
-            .controls {
-                position: static;
-                flex-direction: column;
-                opacity: 1 !important;
-                transform: none !important;
-                gap: 2vmin;
-            }
-
-            .btn {
-                width: 10vmin;
-                height: 10vmin;
-                font-size: 5vmin;
-            }
-
-            .settings-btn {
-                font-size: 4vmin;
-            }
+        .sheet-close {
+            position: absolute;
+            top: 3vmin;
+            right: 3vmin;
+            font-size: 4vmin;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
         }
 
-        body.layout-large .stats {
-            display: block;
+        /* --- Layout Adaptations --- */
+
+        body.layout-2x1 #app {
+            flex-direction: row;
+            gap: 5vmin;
         }
 
-        body.layout-large .ring-container {
-            width: 45vmin;
-            height: 45vmin;
+        body.layout-2x1 .ring-wrapper {
+            width: 42vmin;
+            height: 42vmin;
         }
 
-        body.layout-large .timer-text {
-            font-size: 10vmin;
+        body.layout-2x1 .timer-val {
+            font-size: 14vmin;
+        }
+
+        body.layout-2x1 .control-pill {
+            position: static;
+            opacity: 1;
+            transform: none;
+            flex-direction: column;
+            padding: 2vmin;
+            background: transparent;
+            backdrop-filter: none;
+        }
+
+        body.layout-2x1 .icon-btn {
+            font-size: 8vmin;
+            width: 14vmin;
+            height: 14vmin;
+            background: rgba(128, 128, 128, 0.1);
+        }
+
+        body.layout-2x2 .ring-wrapper {
+            width: 65vmin;
+            height: 65vmin;
+        }
+
+        body.layout-2x2 .timer-val {
+            font-size: 18vmin;
+        }
+
+        body.layout-2x2 .control-pill {
+            bottom: 8vmin;
         }
     </style>
 </head>
 
 <body>
     <div id="app" class="paused">
-        <button class="settings-btn" id="openSettings">⚙</button>
+        <div class="gear-btn" id="gearBtn">⚙️</div>
 
-        <div class="ring-container">
+        <div class="ring-wrapper">
             <svg viewBox="0 0 100 100">
-                <circle class="bg-ring" cx="50" cy="50" r="45"></circle>
-                <circle class="progress-ring" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="0">
+                <circle class="track" cx="50" cy="50" r="42"></circle>
+                <circle class="progress" cx="50" cy="50" r="42" stroke-dasharray="263.89" stroke-dashoffset="0">
                 </circle>
             </svg>
-            <div class="timer-text" id="time">25:00</div>
+            <div class="timer-val" id="timerDisplay">25:00</div>
         </div>
 
-        <div class="controls">
-            <button class="btn" id="resetBtn" title="Reset">↻</button>
-            <button class="btn primary" id="toggleBtn" title="Start/Pause">▶</button>
+        <div class="control-pill">
+            <button class="icon-btn" id="btnReset">⟲</button>
+            <button class="icon-btn" id="btnToggle" style="font-size: 7vmin">▶</button>
         </div>
 
-        <div class="stats" id="stats">
-            今日专注: <span id="sessionCount">0</span> 次
-        </div>
-
-        <!-- Settings Overlay -->
-        <div class="settings-overlay" id="settingsOverlay">
-            <div class="settings-title">时长设置 (分钟)</div>
-            <div class="time-presets">
-                <button class="preset-btn" data-time="5">5</button>
-                <button class="preset-btn active" data-time="25">25</button>
-                <button class="preset-btn" data-time="45">45</button>
+        <!-- Settings Sheet -->
+        <div class="sheet-overlay" id="sheet">
+            <div class="sheet-close" id="sheetClose">完成</div>
+            <div class="sheet-title">专注时长</div>
+            <div class="time-grid">
+                <button class="time-opt" onclick="setDuration(5)">5</button>
+                <button class="time-opt active" onclick="setDuration(25)">25</button>
+                <button class="time-opt" onclick="setDuration(45)">45</button>
+                <button class="time-opt" onclick="setDuration(60)">60</button>
+                <button class="time-opt" onclick="setDuration(90)">90</button>
+                <button class="time-opt" onclick="customPrompt()">...</button>
             </div>
-            <div class="input-group">
-                <span>自定义:</span>
-                <input type="number" class="custom-input" id="customTimeInput" value="25" min="1" max="180">
-            </div>
-            <button class="btn primary" id="saveSettings"
-                style="width: auto; padding: 0 6vmin; font-size: 4vmin; height: 10vmin; border-radius: 8px;">
-                完成
-            </button>
+            <div style="font-size: 3vmin; opacity: 0.5">选择时长自动重置</div>
         </div>
     </div>
 
     <script>
-        const FULL_DASH_ARRAY = 283;
+        // Config
+        const RADIUS = 42;
+        const CIRCUMFERENCE = 2 * Math.PI * RADIUS; // ~263.89
 
         // State
-        let selectedDuration = 25; // Minutes
-        let timeLeft = 25 * 60;
+        let duration = 25; // min
+        let timeLeft = duration * 60;
         let isRunning = false;
-        let sessions = 0;
-        let timerInterval = null;
-        let startTime = null;
-        let cachedTimeLeft = timeLeft;
+        let interval = null;
+        let endTime = null;
 
         // Elements
+        const display = document.getElementById('timerDisplay');
+        const progressCircle = document.querySelector('.progress');
         const app = document.getElementById('app');
-        const timeLabel = document.getElementById('time');
-        const circle = document.querySelector('.progress-ring');
-        const toggleBtn = document.getElementById('toggleBtn');
-        const resetBtn = document.getElementById('resetBtn');
-        const sessionCount = document.getElementById('sessionCount');
-        const overlay = document.getElementById('settingsOverlay');
-        const customInput = document.getElementById('customTimeInput');
+        const btnToggle = document.getElementById('btnToggle');
 
-        // Layout Detection
-        function updateLayout() {
-            const isLarge = Math.min(window.innerWidth, window.innerHeight) > 180;
-            if (isLarge) document.body.classList.add('layout-large');
-            else document.body.classList.remove('layout-large');
-        }
-        window.addEventListener('resize', updateLayout);
-        updateLayout();
-
-        // --- Core Logic ---
-
+        // Init Sizing
         function init() {
             loadState();
-            updateInterface();
-            setupSettings();
+            updateLayout();
+            window.addEventListener('resize', updateLayout);
+            render();
+            setupEvents();
+        }
+
+        function updateLayout() {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            const ratio = w / h;
+
+            document.body.className = '';
+            if (ratio > 1.5) document.body.classList.add('layout-2x1');
+            else if (w > 200) document.body.classList.add('layout-2x2');
+            // else default is 1x1 (base styles)
+        }
+
+        function setupEvents() {
+            document.getElementById('btnToggle').onclick = toggle;
+            document.getElementById('btnReset').onclick = reset;
+            document.getElementById('gearBtn').onclick = () => document.getElementById('sheet').classList.add('active');
+            document.getElementById('sheetClose').onclick = () => document.getElementById('sheet').classList.remove('active');
+        }
+
+        function format(sec) {
+            const m = Math.floor(sec / 60);
+            const s = sec % 60;
+            return `${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        function render() {
+            display.textContent = format(timeLeft);
+
+            // Progress
+            const totalSec = duration * 60;
+            const offset = (1 - timeLeft / totalSec) * CIRCUMFERENCE;
+            progressCircle.style.strokeDasharray = `${CIRCUMFERENCE} ${CIRCUMFERENCE}`;
+            progressCircle.style.strokeDashoffset = -offset; // Negative for clockwise depletion or positive? 
+            // Usually standard is positive offset reduces stroke. 
+            // Let's invert: full ring at start.
+            progressCircle.style.strokeDashoffset = (1 - timeLeft / totalSec) * CIRCUMFERENCE;
+
+            // Toggle Icon
+            btnToggle.textContent = isRunning ? '⏸' : '▶';
+
+            if (isRunning) app.classList.remove('paused');
+            else app.classList.add('paused');
+        }
+
+        function toggle() {
+            if (isRunning) pause();
+            else start();
+        }
+
+        function start() {
+            if (isRunning || timeLeft <= 0) return;
+            isRunning = true;
+            endTime = Date.now() + timeLeft * 1000;
+
+            interval = setInterval(() => {
+                const now = Date.now();
+                const delta = Math.ceil((endTime - now) / 1000);
+
+                if (delta <= 0) {
+                    timeLeft = 0;
+                    finish();
+                } else {
+                    timeLeft = delta;
+                }
+                render();
+                saveState();
+            }, 1000);
+            render();
+            saveState();
+        }
+
+        function pause() {
+            clearInterval(interval);
+            isRunning = false;
+            render();
+            saveState();
+        }
+
+        function reset() {
+            pause();
+            timeLeft = duration * 60;
+            render();
+            saveState();
+        }
+
+        function finish() {
+            pause();
+            // Could play sound
+            timeLeft = duration * 60; // Ready for next
+            render();
+        }
+
+        /* Settings */
+        window.setDuration = (m) => {
+            duration = m;
+            reset(); // Auto reset
+            updateActiveBtn(m);
+        };
+
+        window.customPrompt = () => {
+            const m = prompt("Minutes:", duration);
+            if (m && !isNaN(m)) setDuration(parseInt(m));
+        };
+
+        function updateActiveBtn(m) {
+            document.querySelectorAll('.time-opt').forEach(b => {
+                b.classList.toggle('active', b.textContent == m);
+            });
+        }
+
+        /* Persistence */
+        function saveState() {
+            const state = { duration, timeLeft, isRunning, timestamp: Date.now() };
+            // If running, we save target endTime logic? For now simple pause-resume support
+            // For robust 'run in background', we need stored end time.
+            if (isRunning) state.targetEnd = endTime;
+            localStorage.setItem('pomodoro_premium', JSON.stringify(state));
         }
 
         function loadState() {
             try {
-                const saved = JSON.parse(localStorage.getItem('pomodoro_state_v2') || '{}');
-                if (saved.duration) selectedDuration = saved.duration;
-                if (saved.timeLeft !== undefined) timeLeft = saved.timeLeft;
-                if (saved.sessions) sessions = saved.sessions;
+                const s = JSON.parse(localStorage.getItem('pomodoro_premium'));
+                if (!s) return;
 
-                cachedTimeLeft = timeLeft;
-                sessionCount.textContent = sessions;
+                duration = s.duration || 25;
+                updateActiveBtn(duration);
 
-                // Update Settings UI
-                customInput.value = selectedDuration;
-                updatePresetHighlight(selectedDuration);
+                if (s.isRunning && s.targetEnd) {
+                    // Resume logic
+                    const now = Date.now();
+                    const remain = Math.ceil((s.targetEnd - now) / 1000);
+                    if (remain > 0) {
+                        timeLeft = remain;
+                        start(); // Resume
+                    } else {
+                        timeLeft = duration * 60; // Expired
+                    }
+                } else {
+                    timeLeft = s.timeLeft || (duration * 60);
+                }
             } catch (e) { }
         }
 
-        function saveState() {
-            localStorage.setItem('pomodoro_state_v2', JSON.stringify({
-                duration: selectedDuration,
-                timeLeft,
-                sessions,
-                timestamp: Date.now()
-            }));
-        }
-
-        function formatTime(time) {
-            const m = Math.floor(time / 60);
-            const s = time % 60;
-            return `${m}:${s < 10 ? '0' + s : s}`;
-        }
-
-        function updateInterface() {
-            timeLabel.innerHTML = formatTime(timeLeft);
-
-            const totalSeconds = selectedDuration * 60;
-            const rawFraction = timeLeft / totalSeconds;
-            // Prevent division by zero
-            if (totalSeconds === 0) return;
-
-            const offset = (FULL_DASH_ARRAY * (1 - rawFraction)).toFixed(0);
-            circle.style.strokeDashoffset = offset;
-        }
-
-        function startTimer() {
-            if (isRunning) return;
-            isRunning = true;
-            toggleBtn.innerHTML = '⏸';
-            app.classList.remove('paused');
-
-            startTime = Date.now();
-            // Refreeze cachedTimeLeft to current displayed time to resume correctly
-            cachedTimeLeft = timeLeft;
-
-            timerInterval = setInterval(() => {
-                const now = Date.now();
-                const delta = Math.floor((now - startTime) / 1000);
-                timeLeft = cachedTimeLeft - delta;
-
-                if (timeLeft <= 0) {
-                    timeLeft = 0;
-                    onTimesUp();
-                }
-                updateInterface();
-                saveState();
-            }, 1000);
-        }
-
-        function pauseTimer() {
-            clearInterval(timerInterval);
-            isRunning = false;
-            toggleBtn.innerHTML = '▶';
-            app.classList.add('paused');
-            saveState();
-        }
-
-        function resetTimer() {
-            pauseTimer();
-            timeLeft = selectedDuration * 60;
-            cachedTimeLeft = timeLeft;
-            updateInterface();
-            saveState();
-        }
-
-        function onTimesUp() {
-            pauseTimer();
-            sessions++;
-            sessionCount.textContent = sessions;
-            timeLeft = selectedDuration * 60; // Auto reset to start
-            cachedTimeLeft = timeLeft;
-            updateInterface();
-            saveState();
-
-            // Notification sound could play here
-        }
-
-        // --- Settings Logic ---
-
-        function setupSettings() {
-            const presets = document.querySelectorAll('.preset-btn');
-            presets.forEach(btn => {
-                btn.onclick = () => {
-                    const t = parseInt(btn.dataset.time);
-                    customInput.value = t;
-                    selectDuration(t);
-                };
-            });
-
-            document.getElementById('openSettings').onclick = () => {
-                overlay.classList.add('active');
-            };
-
-            document.getElementById('saveSettings').onclick = () => {
-                let val = parseInt(customInput.value);
-                if (val < 1) val = 1;
-                if (val > 180) val = 180;
-                selectDuration(val);
-                overlay.classList.remove('active');
-            };
-        }
-
-        function selectDuration(minutes) {
-            selectedDuration = minutes;
-            updatePresetHighlight(minutes);
-
-            // Only force reset if not running, or user explicitly requested via save
-            // Here we enforce reset on setting change for simplicity
-            if (!isRunning) {
-                timeLeft = selectedDuration * 60;
-                cachedTimeLeft = timeLeft;
-                updateInterface();
-                saveState();
-            }
-        }
-
-        function updatePresetHighlight(minutes) {
-            document.querySelectorAll('.preset-btn').forEach(b => {
-                b.classList.toggle('active', parseInt(b.dataset.time) === minutes);
-            });
-        }
-
-        // --- Events ---
-        toggleBtn.onclick = () => isRunning ? pauseTimer() : startTimer();
-        resetBtn.onclick = resetTimer;
-
+        // Initial
         init();
+
     </script>
 </body>
 
