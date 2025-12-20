@@ -1,30 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
     <style>
-        body { margin: 0; padding: 0; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; font-family: sans-serif; overflow: hidden; user-select: none; }
-        .clock-face { position: relative; width: 90vmin; height: 90vmin; border-radius: 50%; background: linear-gradient(135deg, #ffffff, #e6e6e6); box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0 0 20px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; }
-        .branding { position: absolute; top: 20%; font-size: 3vmin; color: #666; font-weight: bold; letter-spacing: 0.2em; z-index: 0; }
-        .marker { position: absolute; top: 0; left: 50%; transform-origin: 50% 50vmin; width: 1%; height: 50%; pointer-events: none; }
-        .marker-line { width: 100%; margin: 0 auto; margin-top: 4%; background-color: #333; }
-        .marker.hour .marker-line { height: 12%; }
-        .marker.minute .marker-line { height: 4%; background-color: #666; width: 60%; }
-        .center-dot { position: absolute; top: 50%; left: 50%; width: 4%; height: 4%; background-color: #333; border-radius: 50%; transform: translate(-50%, -50%); z-index: 20; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        .hand { position: absolute; top: 50%; left: 50%; transform-origin: bottom center; transform: translate(-50%, -100%) rotate(0deg); border-radius: 10px; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .hand.hour { width: 2.5%; height: 25%; background-color: #333; }
-        .hand.minute { width: 1.8%; height: 35%; background-color: #555; }
-        .hand.second { width: 0.8%; height: 42%; background-color: #e74c3c; z-index: 11; transform-origin: 50% 85%; top: 15%; /* Adjust for 85% pivot */ transform: translateX(-50%) rotate(0deg); }
-        
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .clock-face {
+            position: relative;
+            width: 90vmin;
+            height: 90vmin;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffffff, #e6e6e6);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .branding {
+            position: absolute;
+            top: 20%;
+            font-size: 3vmin;
+            color: #666;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            z-index: 0;
+        }
+
+        .marker {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform-origin: 50% 50vmin;
+            width: 1%;
+            height: 50%;
+            pointer-events: none;
+        }
+
+        .marker-line {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 4%;
+            background-color: #333;
+        }
+
+        .marker.hour .marker-line {
+            height: 12%;
+        }
+
+        .marker.minute .marker-line {
+            height: 4%;
+            background-color: #666;
+            width: 60%;
+        }
+
+        .center-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4%;
+            height: 4%;
+            background-color: #333;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .hand {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            transform: translate(-50%, -100%) rotate(0deg);
+            border-radius: 10px;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .hand.hour {
+            width: 2.5%;
+            height: 25%;
+            background-color: #333;
+        }
+
+        .hand.minute {
+            width: 1.8%;
+            height: 35%;
+            background-color: #555;
+        }
+
+        .hand.second {
+            width: 0.8%;
+            height: 42%;
+            background-color: #e74c3c;
+            z-index: 11;
+            transform-origin: 50% 85%;
+            top: 15%;
+            /* Adjust for 85% pivot */
+            transform: translateX(-50%) rotate(0deg);
+        }
+
         /* Specific fix for second hand strictly from center like React version */
         .hand.second {
-            top: 50%; transform-origin: bottom center;
-            width: 0.8%; height: 42%;
+            top: 50%;
+            transform-origin: bottom center;
+            width: 0.8%;
+            height: 42%;
         }
     </style>
 </head>
+
 <body>
     <div class="clock-face">
         <div class="branding">PREMIUM WATCH</div>
@@ -44,8 +145,8 @@
             marker.className = `marker ${isHour ? 'hour' : 'minute'}`;
             marker.style.transform = `translateX(-50%) rotate(${i * 6}deg)`;
             // Adjust transform origin for pure CSS rotation around center
-            marker.style.transformOrigin = '50% 45vmin'; 
-            
+            marker.style.transformOrigin = '50% 45vmin';
+
             const line = document.createElement('div');
             line.className = 'marker-line';
             marker.appendChild(line);
@@ -57,7 +158,7 @@
             const seconds = now.getSeconds();
             const minutes = now.getMinutes();
             const hours = now.getHours();
-            
+
             const secondsDegrees = seconds * 6;
             const minutesDegrees = minutes * 6 + seconds * 0.1;
             const hoursDegrees = (hours % 12) * 30 + minutes * 0.5;
@@ -71,4 +172,5 @@
         requestAnimationFrame(updateClock);
     </script>
 </body>
+
 </html>
