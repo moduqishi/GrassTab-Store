@@ -70,5 +70,53 @@
             "color": "from-white to-gray-100",
             "isApp": false
         }
+    },
+    {
+        "id": "com.widget.pomodoro.adaptive",
+        "name": "专注番茄钟",
+        "description": "自适应布局的番茄工作法计时器",
+        "icon": "clock",
+        "screenshots": [
+            "https://images.unsplash.com/photo-1506784335131-d6959463087c?w=800&auto=format&fit=crop&q=60"
+        ],
+        "version": "1.0.0",
+        "author": "System",
+        "category": "Productivity",
+        "shortcut": {
+            "title": "Focus Timer",
+            "type": "widget",
+            "widgetType": "iframe",
+            "widgetContent": "https://moduqishi.github.io/GrassTab-Store/widgets/pomodoro.html",
+            "size": {
+                "w": 2,
+                "h": 2
+            },
+            "color": "from-red-500 to-red-600",
+            "isApp": false
+        }
+    },
+    {
+        "id": "com.widget.todo.smart",
+        "name": "智能待办",
+        "description": "支持多视图切换的轻量待办清单",
+        "icon": "list",
+        "screenshots": [
+            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60"
+        ],
+        "version": "1.0.0",
+        "author": "System",
+        "category": "Productivity",
+        "shortcut": {
+            "title": "To-Do List",
+            "type": "widget",
+            "widgetType": "iframe",
+            "widgetContent": "https://moduqishi.github.io/GrassTab-Store/widgets/todo.html",
+            "size": {
+                "w": 2,
+                "h": 2
+            },
+            "color": "from-blue-500 to-blue-600",
+            "isApp": false
+        }
     }
 ]

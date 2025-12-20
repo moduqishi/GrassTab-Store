@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>智能待办</title>
+    <style>
+        :root {
+            --primary: #007aff;
+            --bg: #ffffff;
+            --text: #333333;
+            --secondary: #8e8e93;
+            --border: #e5e5ea;
+            --overlay-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #0a84ff;
+                --bg: #1c1c1e;
+                --text: #ffffff;
+                --secondary: #98989d;
+                --border: #38383a;
+                --overlay-bg: rgba(28, 28, 30, 0.98);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, sans-serif;
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Header (Visible in Large Only) --- */
+        .header {
+            display: none;
+            padding: 2vmin 3vmin;
+            font-weight: bold;
+            font-size: 4.5vmin;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* --- List View --- */
+        .todo-list {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            /* Hide scrollbar visually but keep functionality */
+            scrollbar-width: none;
+        }
+
+        .todo-list::-webkit-scrollbar {
+            display: none;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            padding: 3vmin;
+            border-bottom: 1px solid var(--border);
+            font-size: 5.5vmin;
+            /* Increased from 4 */
+            cursor: pointer;
+        }
+
+        .todo-item:active {
+            background: rgba(128, 128, 128, 0.1);
+        }
+
+        .checkbox {
+            width: 5vmin;
+            height: 5vmin;
+            border: 2px solid var(--secondary);
+            border-radius: 50%;
+            margin-right: 3vmin;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .todo-item.completed .checkbox {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .todo-item.completed span {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .empty-state {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 5vmin;
+            /* Increased from 3.5 */
+            text-align: center;
+            flex-direction: column;
+            gap: 2vmin;
+        }
+
+        /* --- Controls --- */
+
+        /* Floating Add Button (for Compact Modes) */
+        .fab {
+            position: absolute;
+            bottom: 3vmin;
+            right: 3vmin;
+            width: 12vmin;
+            height: 12vmin;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8vmin;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 5;
+            transition: transform 0.2s;
+        }
+
+        .fab:active {
+            transform: scale(0.9);
+        }
+
+        /* --- Input Overlay (For 1x1 / Compact Adding) --- */
+        .input-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--overlay-bg);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            padding: 4vmin;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            justify-content: center;
+        }
+
+        .input-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .overlay-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--primary);
+            font-size: 10vmin;
+            /* Increased from 6 */
+            padding: 2vmin 0;
+            color: var(--text);
+            outline: none;
+            margin-bottom: 4vmin;
+        }
+
+        .overlay-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 3vmin;
+        }
+
+        .action-btn {
+            background: var(--surface);
+            border: none;
+            color: var(--text);
+            padding: 2vmin 4vmin;
+            border-radius: 6px;
+            font-size: 6vmin;
+            /* Increased from 4 */
+            cursor: pointer;
+        }
+
+        .action-btn.primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* --- Layout Logic --- */
+
+        /* Large (2x2) */
+        body.layout-large .header {
+            display: flex;
+        }
+
+        body.layout-large .fab {
+            display: none;
+        }
+
+        /* Use inline header/footer input if we had one, but Overlay is cleaner for consistent UX */
+
+        /* Even in Large, let's stick to FAB for consistency, OR use header add button. 
+           Let's use Header Add Button for Large, FAB for others. */
+
+        .header-add {
+            font-size: 6vmin;
+            line-height: 1;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        body.layout-large .fab {
+            display: none;
+        }
+
+        /* Hide FAB in large */
+
+        /* Compact (1x1) */
+        body:not(.layout-large) .todo-item {
+            padding: 2vmin 3vmin;
+            font-size: 4.5vmin;
+        }
+
+        /* In very small mode, hiding completed items can save space */
+        body.layout-mini .todo-item.completed {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (2x2 Only) -->
+    <div class="header">
+        <span>待办清单</span>
+        <div class="header-add" id="headerAdd">+</div>
+    </div>
+
+    <!-- Main List -->
+    <div class="empty-state" id="emptyState" style="display:none;">
+        <span style="font-size: 6vmin">🎉</span>
+        <span>全搞定了</span>
+    </div>
+
+    <ul class="todo-list" id="todoList">
+        <!-- JS rendered -->
+    </ul>
+
+    <!-- Floating Action Button (1x1 and 2x1) -->
+    <div class="fab" id="fab">+</div>
+
+    <!-- Input Overlay (Shared) -->
+    <div class="input-overlay" id="inputOverlay">
+        <div style="font-weight: bold; margin-bottom: 2vmin; font-size: 4vmin;">新任务</div>
+        <input type="text" class="overlay-input" id="taskInput" placeholder="写点什么..." maxlength="20">
+        <div class="overlay-actions">
+            <button class="action-btn" id="cancelBtn">取消</button>
+            <button class="action-btn primary" id="confirmBtn">添加</button>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'widget_todos_v2';
+        let todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+
+        // Elements
+        const list = document.getElementById('todoList');
+        const emptyState = document.getElementById('emptyState');
+        const overlay = document.getElementById('inputOverlay');
+        const input = document.getElementById('taskInput');
+
+        // Layout
+        function updateLayout() {
+            const isLarge = Math.min(window.innerWidth, window.innerHeight) > 180;
+            const isMini = window.innerWidth < 160;
+
+            if (isLarge) document.body.classList.add('layout-large');
+            else document.body.classList.remove('layout-large');
+
+            if (isMini) document.body.classList.add('layout-mini');
+            else document.body.classList.remove('layout-mini');
+        }
+        window.addEventListener('resize', updateLayout);
+        updateLayout();
+
+        // Logic
+        function save() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
+            render();
+        }
+
+        function toggle(index) {
+            todos[index].completed = !todos[index].completed;
+            save();
+        }
+
+        // Long press to delete? Or just click to toggle. 
+        // For simplicity in widget: Click = Toggle. 
+        // Maybe right click to delete? Or simple "Clean Completed" button in header.
+
+        function addTask() {
+            const val = input.value.trim();
+            if (val) {
+                todos.unshift({ text: val, completed: false });
+                save();
+            }
+            closeOverlay();
+        }
+
+        function openOverlay() {
+            overlay.classList.add('active');
+            setTimeout(() => input.focus(), 100); // Focus after transition start
+        }
+
+        function closeOverlay() {
+            overlay.classList.remove('active');
+            input.value = '';
+        }
+
+        function render() {
+            list.innerHTML = '';
+
+            // In mini mode, we filter out completed items to save space?
+            // Handled via CSS usually, but let's check empty state logic
+            const visibleTodos = document.body.classList.contains('layout-mini')
+                ? todos.filter(t => !t.completed)
+                : todos;
+
+            // Actually, CSS solution is better for dynamic resize. 
+            // Just check overall count.
+
+            if (todos.length === 0) {
+                emptyState.style.display = 'flex';
+                list.style.display = 'none';
+            } else {
+                emptyState.style.display = 'none';
+                list.style.display = 'block';
+
+                todos.forEach((t, i) => {
+                    const li = document.createElement('li');
+                    li.className = `todo-item ${t.completed ? 'completed' : ''}`;
+                    li.innerHTML = `<div class="checkbox"></div><span>${t.text}</span>`;
+                    li.onclick = () => toggle(i);
+                    // Add simple delete on right click?
+                    li.oncontextmenu = (e) => {
+                        e.preventDefault();
+                        if (confirm('删除此任务?')) {
+                            todos.splice(i, 1);
+                            save();
+                        }
+                    };
+                    list.appendChild(li);
+                });
+            }
+        }
+
+        // Bindings
+        document.getElementById('fab').onclick = openOverlay;
+        document.getElementById('headerAdd').onclick = openOverlay;
+        document.getElementById('cancelBtn').onclick = closeOverlay;
+        document.getElementById('confirmBtn').onclick = addTask;
+
+        input.onkeypress = (e) => {
+            if (e.key === 'Enter') addTask();
+        };
+
+        // Init
+        render();
+    </script>
+</body>
+
+</html>
